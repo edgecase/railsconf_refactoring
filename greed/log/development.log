@@ -1,0 +1,1398 @@
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 12:15:32) [GET]
+Rendering mockups/frameset
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 12:15:32) [GET]
+Rendering mockups/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die1.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die2.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die3.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die4.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die5.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 12:17:02) [GET]
+Rendering mockups/frameset
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 12:17:02) [GET]
+Rendering mockups/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die1.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die2.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die3.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die4.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:17:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die5.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 12:18:02) [GET]
+Rendering mockups/frameset
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 12:18:02) [GET]
+Rendering mockups/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:18:05) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:05) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die1.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:06) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die2.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:06) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die3.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:06) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die4.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:06) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die5.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:18:07) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die1.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die2.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die3.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die4.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die5.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:18:08) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die1.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die2.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die3.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die4.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-17 12:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/mockup/img/die5.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 12:21:52) [GET]
+Rendering mockups/frameset
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 12:21:52) [GET]
+Rendering mockups/index
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:21:53) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 12:30:11) [GET]
+Rendering mockups/frameset
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 12:30:11) [GET]
+Rendering mockups/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:30:14) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:30:16) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:30:19) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 12:30:33) [GET]
+Rendering mockups/frameset
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 12:30:33) [GET]
+Rendering mockups/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 12:30:35) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:06:38) [GET]
+Rendering mockups/frameset
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:06:38) [GET]
+Rendering mockups/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:06:40) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:07:41) [GET]
+Rendering mockups/frameset
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:07:41) [GET]
+Rendering mockups/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:07:42) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:07:44) [GET]
+  Parameters: {"template_name"=>"alternate_layout"}
+
+ActionView::MissingTemplate (Missing layout layouts/alternate.erb in view path app/views:vendor/plugins/showoff/app/views):
+  vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:07:46) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:08:04) [GET]
+Rendering mockups/frameset
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:08:04) [GET]
+Rendering mockups/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:08:06) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:09:51) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:09:51) [GET]
+Rendering mockups/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:09:53) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:11:27) [GET]
+Rendering mockups/frameset
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:11:27) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:11:29) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:11:48) [GET]
+Rendering mockups/frameset
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:11:49) [GET]
+Rendering mockups/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:11:50) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:11:52) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:11:54) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:13:22) [GET]
+Rendering mockups/frameset
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:13:22) [GET]
+Rendering mockups/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:13:26) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:14:07) [GET]
+Rendering mockups/frameset
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:14:07) [GET]
+Rendering mockups/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:14:09) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:14:39) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:14:43) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:14:44) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:14:46) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:14:50) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:14:50) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:14:52) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:15:23) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:15:23) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:15:25) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+
+ActionView::TemplateError (No expansion found for :styles) on line #3 of app/views/mockups/player.html.erb:
+1: <html>
+2:   <head>
+3:     <%= stylesheet_link_tag :styles %>
+4:   </head>
+5:   <body>
+6:     <div id="wrap">
+
+    app/views/mockups/player.html.erb:3
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:15:36) [GET]
+Rendering mockups/frameset
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:15:36) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:15:37) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:16:45) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:16:45) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:16:46) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:18:50) [GET]
+Rendering mockups/frameset
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:18:50) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:18:51) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_rolls (1.0ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:19:44) [GET]
+Rendering mockups/frameset
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:19:44) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:19:45) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_rolls (0.6ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:21:32) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:21:33) [GET]
+Rendering mockups/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:21:35) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+ERROR: compiling _run_erb_app47views47mockups47player46html46erb RAISED compile error
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:24: syntax error, unexpected tASSOC, expecting '}'
+@output_buffer.concat "        "; @output_buffer.concat(( render :partial => "rolls", locals { :hold => true } ).to_s)
+                                                                                                       ^
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:25: syntax error, unexpected tIVAR, expecting ')'
+@output_buffer.concat "      </div>\n"
+              ^
+Function body:           def _run_erb_app47views47mockups47player46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html>\n"
+@output_buffer.concat "  <head>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( stylesheet_link_tag 'styles' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </head>\n"
+@output_buffer.concat "  <body>\n"
+@output_buffer.concat "    <div id=\"wrap\">\n"
+@output_buffer.concat "      <div id=\"header\">\n"
+@output_buffer.concat "        <h1>Greed!</h1>\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <div id=\"sidebar\">\n"
+@output_buffer.concat "        <h2>Players</h2>\n"
+@output_buffer.concat "        <ul>\n"
+@output_buffer.concat "          <li class=\"current_player\">Randy</li>\n"
+@output_buffer.concat "          <p>Some description of him</p>\n"
+@output_buffer.concat "          <li>Sandy</li>\n"
+@output_buffer.concat "          <p>Some description of him</p>\n"
+@output_buffer.concat "        </ul>        \n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <div id=\"main\">\n"
+@output_buffer.concat "        <h3>Rolls</h3>\n"
+@output_buffer.concat "        ";  3.times do ; @output_buffer.concat "\n"
+@output_buffer.concat "          "; @output_buffer.concat(( render :partial => "rolls" ).to_s)
+@output_buffer.concat "        ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( render :partial => "rolls", locals { :hold => true } ).to_s)
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <div id=\"footer\">\n"
+@output_buffer.concat "        &nbsp\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "  </body></html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:34:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/objo/git/railsconf_refactoring/greed/vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:24: syntax error, unexpected tASSOC, expecting '}'
+@output_buffer.concat "        "; @output_buffer.concat(( render :partial => "rolls", locals { :hold => true } ).to_s)
+                                                                                                       ^
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:25: syntax error, unexpected tIVAR, expecting ')'
+@output_buffer.concat "      </div>\n"
+              ^) on line #24 of app/views/mockups/player.html.erb:
+21:         <% 3.times do %>
+22:           <%= render :partial => "rolls" -%>
+23:         <% end %>
+24:         <%= render :partial => "rolls", locals { :hold => true } -%>
+25:       </div>
+26:       <div id="footer">
+27:         &nbsp
+
+    app/views/mockups/player.html.erb:34:in `compile!'
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:21:56) [GET]
+Rendering mockups/frameset
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:21:56) [GET]
+Rendering mockups/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:21:58) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+ERROR: compiling _run_erb_app47views47mockups47_rolls46html46erb_locals_object_rolls RAISED compile error
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/_rolls.html.erb:11: syntax error, unexpected ';'
+ elsif ; @output_buffer.concat "\n"
+        ^
+Function body:           def _run_erb_app47views47mockups47_rolls46html46erb_locals_object_rolls(local_assigns)
+            old_output_buffer = output_buffer;rolls = local_assigns[:rolls];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<ul class=\"dice\">\n"
+@output_buffer.concat "  <li>"; @output_buffer.concat(( image_tag 'die1.gif' ).to_s); @output_buffer.concat "</li>\n"
+@output_buffer.concat "  <li>"; @output_buffer.concat(( image_tag 'die2.gif' ).to_s); @output_buffer.concat "</li>\n"
+@output_buffer.concat "  <li>"; @output_buffer.concat(( image_tag 'die3.gif' ).to_s); @output_buffer.concat "</li>\n"
+@output_buffer.concat "  <li>"; @output_buffer.concat(( image_tag 'die4.gif' ).to_s); @output_buffer.concat "</li>\n"
+@output_buffer.concat "  <li>"; @output_buffer.concat(( image_tag 'die5.gif' ).to_s); @output_buffer.concat "</li>\n"
+@output_buffer.concat "</ul>\n"
+@output_buffer.concat "<p>Score: 500</p>\n"
+ if hold ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Randy rolled again</h3>\n"
+ elsif ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Randy held</h3>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/objo/git/railsconf_refactoring/greed/app/views/mockups/_rolls.html.erb:17:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:22:in `_run_erb_app47views47mockups47player46html46erb'
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:21:in `times'
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:21:in `_run_erb_app47views47mockups47player46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/objo/git/railsconf_refactoring/greed/vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/_rolls.html.erb:11: syntax error, unexpected ';'
+ elsif ; @output_buffer.concat "\n"
+        ^) on line #11 of app/views/mockups/_rolls.html.erb:
+8: <p>Score: 500</p>
+9: <% if hold %>
+10:   <h3>Randy rolled again</h3>
+11: <% elsif %>
+12:   <h3>Randy held</h3>
+13: <% end %>
+
+    app/views/mockups/_rolls.html.erb:17:in `compile!'
+    app/views/mockups/player.html.erb:22
+    app/views/mockups/player.html.erb:21:in `times'
+    app/views/mockups/player.html.erb:21
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:22:22) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:22:22) [GET]
+Rendering mockups/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:22:23) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+
+ActionView::TemplateError (undefined local variable or method `hold' for #<ActionView::Base:0x225d580>) on line #9 of app/views/mockups/_rolls.html.erb:
+6:   <li><%= image_tag 'die5.gif' %></li>
+7: </ul>
+8: <p>Score: 500</p>
+9: <% if hold %>
+10:   <h3>Randy rolled again</h3>
+11: <% else %>
+12:   <h3>Randy held</h3>
+
+    app/views/mockups/_rolls.html.erb:9
+    app/views/mockups/player.html.erb:22
+    app/views/mockups/player.html.erb:21:in `times'
+    app/views/mockups/player.html.erb:21
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:22:56) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+ERROR: compiling _run_erb_app47views47mockups47player46html46erb RAISED compile error
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "          "; @output_buffer.concat(( render :partial => "rolls" locals => { :hold => false } ).to_s)
+                                                                                             ^
+Function body:           def _run_erb_app47views47mockups47player46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html>\n"
+@output_buffer.concat "  <head>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( stylesheet_link_tag 'styles' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </head>\n"
+@output_buffer.concat "  <body>\n"
+@output_buffer.concat "    <div id=\"wrap\">\n"
+@output_buffer.concat "      <div id=\"header\">\n"
+@output_buffer.concat "        <h1>Greed!</h1>\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <div id=\"sidebar\">\n"
+@output_buffer.concat "        <h2>Players</h2>\n"
+@output_buffer.concat "        <ul>\n"
+@output_buffer.concat "          <li class=\"current_player\">Randy</li>\n"
+@output_buffer.concat "          <p>Some description of him</p>\n"
+@output_buffer.concat "          <li>Sandy</li>\n"
+@output_buffer.concat "          <p>Some description of him</p>\n"
+@output_buffer.concat "        </ul>        \n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <div id=\"main\">\n"
+@output_buffer.concat "        <h3>Rolls</h3>\n"
+@output_buffer.concat "        ";  3.times do ; @output_buffer.concat "\n"
+@output_buffer.concat "          "; @output_buffer.concat(( render :partial => "rolls" locals => { :hold => false } ).to_s)
+@output_buffer.concat "        ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( render :partial => "rolls", locals => { :hold => true } ).to_s)
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <div id=\"footer\">\n"
+@output_buffer.concat "        &nbsp\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "  </body></html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:34:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/objo/git/railsconf_refactoring/greed/vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/objo/git/railsconf_refactoring/greed/app/views/mockups/player.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "          "; @output_buffer.concat(( render :partial => "rolls" locals => { :hold => false } ).to_s)
+                                                                                             ^) on line #22 of app/views/mockups/player.html.erb:
+19:       <div id="main">
+20:         <h3>Rolls</h3>
+21:         <% 3.times do %>
+22:           <%= render :partial => "rolls" locals => { :hold => false } -%>
+23:         <% end %>
+24:         <%= render :partial => "rolls", locals => { :hold => true } -%>
+25:       </div>
+
+    app/views/mockups/player.html.erb:34:in `compile!'
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (96.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:23:17) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+
+ActionView::TemplateError (undefined local variable or method `locals' for #<ActionView::Base:0x23af7f8>) on line #22 of app/views/mockups/player.html.erb:
+19:       <div id="main">
+20:         <h3>Rolls</h3>
+21:         <% 3.times do %>
+22:           <%= render :partial => "rolls", locals => { :hold => false } -%>
+23:         <% end %>
+24:         <%= render :partial => "rolls", locals => { :hold => true } -%>
+25:       </div>
+
+    app/views/mockups/player.html.erb:22
+    app/views/mockups/player.html.erb:21:in `times'
+    app/views/mockups/player.html.erb:21
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (102.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:24:39) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:24:39) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:24:41) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_rolls (1.0ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:25:11) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:25:11) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:25:13) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_rolls (1.2ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:29:58) [GET]
+Rendering mockups/frameset
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:29:59) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:30:00) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+
+ActionView::TemplateError (Missing template mockups/_player.erb in view path app/views:vendor/plugins/showoff/app/views) on line #13 of app/views/mockups/player.html.erb:
+10:       <div id="sidebar">
+11:         <h2>Players</h2>
+12:         <ul>
+13:           <%= render :partial => "player", :locals => { :player => "Randy", :current => true } -%>
+14:           <%= render :partial => "player", :locals => { :player => "Sandy", :current => true } -%>
+15:           <%= render :partial => "player", :locals => { :player => "You", :current => true } -%>
+16:         </ul>        
+
+    app/views/mockups/player.html.erb:13
+    vendor/plugins/showoff/app/controllers/mockups_controller.rb:27:in `show'
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:30:20) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:30:20) [GET]
+Rendering mockups/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:30:22) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.7ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_rolls (0.6ms)
+Rendered mockups/_rolls (0.6ms)
+Rendered mockups/_rolls (0.6ms)
+Rendered mockups/_rolls (0.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:30:25) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:30:25) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:30:27) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_rolls (0.5ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.5ms)
+Rendered mockups/_rolls (0.5ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:30:46) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:30:46) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:30:47) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.5ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:36:46) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:36:46) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:36:48) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:36:56) [GET]
+Rendering mockups/frameset
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:36:56) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:37:40) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:37:40) [GET]
+Rendering mockups/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:37:41) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:38:05) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:38:05) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:38:06) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:38:39) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:38:39) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:38:41) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_rolls (0.6ms)
+Rendered mockups/_rolls (0.6ms)
+Rendered mockups/_rolls (0.7ms)
+Rendered mockups/_rolls (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/mockup/player]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:39:13) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:39:13) [GET]
+Rendering mockups/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#frameset (for 127.0.0.1 at 2009-04-17 14:39:14) [GET]
+Rendering mockups/frameset
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups]
+
+
+Processing MockupsController#index (for 127.0.0.1 at 2009-04-17 14:39:14) [GET]
+Rendering mockups/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/mockups_index]
+
+
+Processing MockupsController#show (for 127.0.0.1 at 2009-04-17 14:39:15) [GET]
+  Parameters: {"template_name"=>"player"}
+Rendering mockups/player
+Rendered mockups/_players (0.1ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_players (0.0ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Rendered mockups/_rolls (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/mockup/player]
