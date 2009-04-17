@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <%= stylesheet_link_tag 'styles' %>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Greed!</h1>
+      </div>
+      <h3>Welcome to Greed</h3>
+      <% form_for :game,:url => { :action => "create" } do |f| %>
+        <%= f.error_messages %>
+        <%= f.label "Your name:" -%>
+        <%= f.text_field "name" %>
+        <%= f.submit "Next" %>
+      <% end -%>
+      <div id="footer">
+        &nbsp
+      </div>
+    </div>
+  </body>
+</html>
+
