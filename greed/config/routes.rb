@@ -33,7 +33,13 @@ ActionController::Routing::Routes.draw do |map|
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
 
-  map.resources :game
+  map.resources(:game,
+    :member => {
+      :choose_players => :get,
+      :assign_players => :post,
+      :auto_turn => :get,
+    })
+
   map.root :controller => "game", :action => "new"
 
   # See how all your routes lay out with "rake routes"
