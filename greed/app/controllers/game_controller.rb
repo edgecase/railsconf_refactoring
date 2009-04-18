@@ -4,7 +4,7 @@ class GameController < ApplicationController
 
   def create
     @game = Game.create
-    @game.human_player = Player.create(params[:player])
+    @game.human_player = HumanPlayer.create(params[:player])
     if @game.save
       session[:game] = @game.id
       redirect_to choose_players_game_path(@game)

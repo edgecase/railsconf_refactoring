@@ -9,8 +9,8 @@ class GameControllerTest < ActionController::TestCase
   context "Action Create" do
     setup do
       @game = new_game
-      @player = Player.new
-      flexmock(Player).should_receive(:create).
+      @player = HumanPlayer.new
+      flexmock(HumanPlayer).should_receive(:create).
         with("name" => "Bob").once.
         and_return(@player)
     end

@@ -9,19 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090417203144) do
+ActiveRecord::Schema.define(:version => 20090417195145) do
 
   create_table "games", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "players", :force => true do |t|
+  create_table "human_players", :force => true do |t|
     t.string   "name"
     t.integer  "score"
+    t.integer  "game_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "game_id"
   end
 
 end
