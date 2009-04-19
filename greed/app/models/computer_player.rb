@@ -1,11 +1,5 @@
 class ComputerPlayer < ActiveRecord::Base
-  def name
-    logic.name
-  end
-
-  def description
-    logic.description
-  end
+  delegate :name, :description, :roll_again?, :to => :logic
 
   def logic
     @logic ||= make_strategy
