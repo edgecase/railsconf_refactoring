@@ -31,6 +31,8 @@ class GameController < ApplicationController
   end
 
   def computer_turn
+    @game = Game.find(params[:id])
+    @players = @game.computer_players + [@game.human_player]
   end
 
 end

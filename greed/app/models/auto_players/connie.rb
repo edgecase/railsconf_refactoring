@@ -3,5 +3,9 @@ class Connie < AutoPlayer
     "Connie"
   end
 
+  def self.description
+    "Conservative player"
+  end
+
   AutoPlayer.register(self)
 end

@@ -8,7 +8,8 @@ class AutoPlayer
   end
 
   def self.[](name)
-    @players[name]
+    load_auto_players
+    get_players[name]
   end
 
   def self.clear
@@ -24,6 +25,10 @@ class AutoPlayer
 
   def name
     self.class.name
+  end
+
+  def self.description
+    "DESCRIPTION"
   end
 
   def roll_again?(*args)

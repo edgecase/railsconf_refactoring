@@ -3,5 +3,9 @@ class Randy < AutoPlayer
     "Randy"
   end
 
+  def self.description
+    "Random Player"
+  end
+
   AutoPlayer.register(self)
 end

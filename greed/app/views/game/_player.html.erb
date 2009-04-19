@@ -1,0 +1,6 @@
+<% if current %>
+  <li class="current_player"><%= player.name %></li>
+<% else %>
+  <li><%= player.name %></li>
+<% end %>
+<p><%=h player.description %></p>
