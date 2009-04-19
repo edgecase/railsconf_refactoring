@@ -37,7 +37,7 @@ ActionController::Routing::Routes.draw do |map|
     :member => {
       :choose_players => :get,
       :assign_players => :post,
-      :auto_turn => :get,
+      :computer_turn => :get,
     })
 
   map.root :controller => "game", :action => "new"

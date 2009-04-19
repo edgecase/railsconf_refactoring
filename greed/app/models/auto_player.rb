@@ -1,11 +1,10 @@
 class AutoPlayer
   def self.players
-    @players.values
+    get_players.values
   end
 
   def self.register(player)
-    @players ||= {}
-    @players[player.name] = player
+    get_players[player.name] = player
   end
 
   def self.[](name)
@@ -17,6 +16,7 @@ class AutoPlayer
   end
 
   def self.load_auto_players
+    return unless get_players.empty?
     Dir[File.join(RAILS_ROOT, 'app', 'models', 'auto_players', '*.rb')].each do |fn|
       load fn
     end
@@ -28,5 +28,9 @@ class AutoPlayer
 
   def roll_again?(*args)
     false
+  end
+
+  def self.get_players
+    @players ||= {}
   end
 end

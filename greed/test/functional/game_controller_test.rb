@@ -70,15 +70,15 @@ class GameControllerTest < ActionController::TestCase
       @game = existing_game
       post :assign_players,
         :id => @game.id,
-        :players => ["Joe", "Connie"]
+        :players => ["Randy", "Connie"]
     end
 
     should 'redirect to auto_turn' do
-      assert_redirected_to auto_turn_game_path(@game)
+      assert_redirected_to computer_turn_game_path(@game)
     end
 
     should 'assign the players to the game' do
-#      assert_equal [Randy, Connie], @game.players
+      assert_equal ["Randy", "Connie"], @game.computer_players.map(&:name)
     end
     
   end

@@ -16,12 +16,21 @@ class GameController < ApplicationController
 
   def choose_players
     @game = Game.find(params[:id])
+    AutoPlayer.load_auto_players
     @players = AutoPlayer.players
   end
 
   def assign_players
     @game = Game.find(params[:id])
-    redirect_to auto_turn_game_path(@game)
+    params[:players].each do |player_name|
+      p = ComputerPlayer.new(:name => player_name)
+      @game.computer_players << p
+    end
+    @game.save
+    redirect_to computer_turn_game_path(@game)
+  end
+
+  def computer_turn
   end
 
 end
