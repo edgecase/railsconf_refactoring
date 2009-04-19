@@ -16,18 +16,24 @@ class GameController < ApplicationController
 
   def choose_players
     @game = Game.find(params[:id])
-    AutoPlayer.load_auto_players
     @players = AutoPlayer.players
   end
 
   def assign_players
     @game = Game.find(params[:id])
-    params[:players].each do |player_name|
-      p = ComputerPlayer.new(:name => player_name)
-      @game.computer_players << p
+    player_names = params[:players] || []
+    if player_names.empty?
+      flash[:error] = "Please select at least one computer player"
+      redirect_to choose_players_game_path(@game)
+    else
+      player_names.each do |player_name|
+        p = ComputerPlayer.new(:name => player_name)
+        @game.computer_players << p
+      end
+      
+      @game.save
+      redirect_to computer_turn_game_path(@game)
     end
-    @game.save
-    redirect_to computer_turn_game_path(@game)
   end
 
   def computer_turn

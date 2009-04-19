@@ -68,22 +68,40 @@ class GameControllerTest < ActionController::TestCase
   context 'Action assign_players' do
     setup do
       @game = existing_game
-      post :assign_players,
-        :id => @game.id,
-        :players => ["Randy", "Connie"]
     end
 
-    should 'redirect to auto_turn' do
-      assert_redirected_to computer_turn_game_path(@game)
+    context 'with no players' do
+      setup { post_assign_players([]) }
+
+      should 'redirect to back to choose players' do
+        assert_redirected_to choose_players_game_path
+      end
+
+      should 'have a need players notice' do
+        assert_match(/select.*player/, flash[:error])
+      end
     end
 
-    should 'assign the players to the game' do
-      assert_equal ["Randy", "Connie"], @game.computer_players.map(&:name)
-    end
-    
+    context 'with some players' do
+      setup { post_assign_players(["Randy", "Connie"]) }
+      
+      should 'redirect to auto_turn' do
+        assert_redirected_to computer_turn_game_path(@game)
+      end
+      
+      should 'assign the players to the game' do
+        assert_equal ["Randy", "Connie"], @game.computer_players.map(&:name)
+      end
+    end    
   end
-
+  
   private
+
+  def post_assign_players(players)
+    post :assign_players,
+      :id => @game.id,
+      :players => players
+  end
 
   def new_game
     game = Game.new

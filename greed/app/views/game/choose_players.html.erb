@@ -8,6 +8,9 @@
         <h1>Greed!</h1>
       </div>
       <h3>Select the players</h3>
+      <% if flash[:error] -%>
+        <div class="error_message"><%= flash[:error] %></div>
+      <% end -%>
       <% form_for :game, :url => assign_players_game_path(@game) do |f| %>
         <%= f.error_messages %>
         <% @players.each do |player| -%>

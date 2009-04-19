@@ -8,19 +8,11 @@ class AutoPlayer
   end
 
   def self.[](name)
-    load_auto_players
     get_players[name]
   end
 
   def self.clear
     @players.clear
-  end
-
-  def self.load_auto_players
-    return unless get_players.empty?
-    Dir[File.join(RAILS_ROOT, 'app', 'models', 'auto_players', '*.rb')].each do |fn|
-      load fn
-    end
   end
 
   def name
