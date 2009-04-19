@@ -1,11 +1,9 @@
-class Connie < AutoPlayer
-  def self.name
+class Connie < GameStrategy
+  def name
     "Connie"
   end
 
-  def self.description
+  def description
     "Conservative player"
   end
-
-  AutoPlayer.register(self)
 end

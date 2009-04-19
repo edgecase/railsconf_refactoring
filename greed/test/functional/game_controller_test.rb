@@ -90,9 +90,19 @@ class GameControllerTest < ActionController::TestCase
       end
       
       should 'assign the players to the game' do
-        assert_equal ["Randy", "Connie"], @game.computer_players.map(&:name)
+        assert_equal ["Randy", "Connie"], @game.computer_players.map(&:strategy)
       end
     end    
+
+    context 'with some players already defined' do
+      setup do
+        @game.computer_players = [ ComputerPlayer.new(:strategy => "Randy") ]
+        post_assign_players(["Connie"])
+      end
+      should 'drop the previously defined players in favor of the new' do
+        assert_equal ["Connie"], @game.computer_players.map(&:strategy)
+      end
+    end
   end
   
   private

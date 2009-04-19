@@ -21,13 +21,14 @@ class GameController < ApplicationController
 
   def assign_players
     @game = Game.find(params[:id])
-    player_names = params[:players] || []
-    if player_names.empty?
+    strategy_names = params[:players] || []
+    if strategy_names.empty?
       flash[:error] = "Please select at least one computer player"
       redirect_to choose_players_game_path(@game)
     else
-      player_names.each do |player_name|
-        p = ComputerPlayer.new(:name => player_name)
+      @game.computer_players.clear
+      strategy_names.each do |strategy|
+        p = ComputerPlayer.new(:strategy => strategy)
         @game.computer_players << p
       end
       

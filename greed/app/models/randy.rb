@@ -1,11 +1,9 @@
-class Randy < AutoPlayer
-  def self.name
+class Randy < GameStrategy
+  def name
     "Randy"
   end
 
-  def self.description
+  def description
     "Random Player"
   end
-
-  AutoPlayer.register(self)
 end
