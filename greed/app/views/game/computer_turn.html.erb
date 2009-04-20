@@ -17,8 +17,8 @@
         </ul>        
       </div>
       <div id="main">
-        <h3>Rolls</h3>
         <% @turn_histories.each do |turn_data| -%>
+          <h3><%= turn_data.player.name %>'s Turn</h3>
           <% turn_data.history.each do |roll_data| -%>
             <%= render :partial => "rolls",
                   :locals => { :player => turn_data.player, :roll_data => roll_data } -%>

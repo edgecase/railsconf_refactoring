@@ -6,6 +6,8 @@ class GameControllerTest < ActionController::TestCase
     post :create, :player => { :name => "Bob" }
   end
 
+  # ------------------------------------------------------------------
+
   context "Action Create" do
     setup do
       @game = new_game
@@ -54,6 +56,8 @@ class GameControllerTest < ActionController::TestCase
     end
   end
 
+  # ------------------------------------------------------------------
+
   context 'Action choose_players' do
     setup do
       @game = existing_game
@@ -64,6 +68,8 @@ class GameControllerTest < ActionController::TestCase
       assert_equal @game, assigns(:game)
     end
   end
+
+  # ------------------------------------------------------------------
 
   context 'Action assign_players' do
     setup do
@@ -104,11 +110,12 @@ class GameControllerTest < ActionController::TestCase
       end
     end
   end
-  
+
+  # ------------------------------------------------------------------  
 
   context 'Action computer_turn' do
     setup do
-      @c1 = ComputerPlayer.new
+      @c1 = ComputerPlayer.new(:score => 50)
       @c2 = ComputerPlayer.new
       @c1.logic = dummy_logic
       @c2.logic = dummy_logic
@@ -119,22 +126,25 @@ class GameControllerTest < ActionController::TestCase
 
     context 'with a two player game' do
       setup do
-        flexmock(@c1).should_receive(:take_turn).once.and_return(fake_turn_data)
-        flexmock(@c2).should_receive(:take_turn).once.and_return(fake_turn_data)
+        flexmock(@c1).should_receive(:take_turn).once.and_return(fake_turn_data(@c1))
+        flexmock(@c2).should_receive(:take_turn).once.and_return(fake_turn_data(@c2))
+        flexmock(@c1).should_receive(:save).once.and_return(true)
+        flexmock(@c2).should_receive(:save).once.and_return(true)
+
         get :computer_turn, :id => @game.id
       end
 
       should 'let all the computer players take a turn' do
-        # test in mock setups
+        # assertions in mocks
       end
 
       should 'return the turn histories' do
-        assert_equal [fake_turn_data, fake_turn_data],
+        assert_equal [fake_turn_data(@c1), fake_turn_data(@c2)],
           assigns(:turn_histories)
       end
 
       should 'add the turn scores to the players' do
-        
+        assert_equal 250, @c1.score
       end
     end
   end
@@ -170,7 +180,7 @@ class GameControllerTest < ActionController::TestCase
       :roll_again? => false)
   end
 
-  def fake_turn_data
-    @fake_turn_data ||= TurnData.new(ComputerPlayer.new, 0, [])
+  def fake_turn_data(cp)
+    @fake_turn_data ||= TurnData.new(cp, 200, [])
   end
 end
