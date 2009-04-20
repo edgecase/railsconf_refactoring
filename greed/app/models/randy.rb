@@ -6,4 +6,8 @@ class Randy < GameStrategy
   def description
     "Random Player"
   end
+
+  def roll_again?
+    rand(2) == 0
+  end
 end
