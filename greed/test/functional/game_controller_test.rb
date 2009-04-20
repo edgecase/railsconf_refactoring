@@ -119,8 +119,8 @@ class GameControllerTest < ActionController::TestCase
 
     context 'with a two player game' do
       setup do
-        flexmock(@c1).should_receive(:take_turn).once.and_return(fake_history)
-        flexmock(@c2).should_receive(:take_turn).once.and_return(fake_history)
+        flexmock(@c1).should_receive(:take_turn).once.and_return(fake_turn_data)
+        flexmock(@c2).should_receive(:take_turn).once.and_return(fake_turn_data)
         get :computer_turn, :id => @game.id
       end
 
@@ -129,8 +129,12 @@ class GameControllerTest < ActionController::TestCase
       end
 
       should 'return the turn histories' do
-        assert_equal [fake_history, fake_history],
+        assert_equal [fake_turn_data, fake_turn_data],
           assigns(:turn_histories)
+      end
+
+      should 'add the turn scores to the players' do
+        
       end
     end
   end
@@ -166,7 +170,7 @@ class GameControllerTest < ActionController::TestCase
       :roll_again? => false)
   end
 
-  def fake_history
-    @fake_history ||= [ComputerPlayer.new, 0, []]
+  def fake_turn_data
+    @fake_turn_data ||= TurnData.new(ComputerPlayer.new, 0, [])
   end
 end

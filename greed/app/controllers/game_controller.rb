@@ -42,7 +42,9 @@ class GameController < ApplicationController
     @players = @game.players
     @turn_histories = []
     @game.computer_players.each do |cp|
-      @turn_histories << cp.take_turn
+      turn_data = cp.take_turn
+      cp.score += turn_data.turn_score
+      @turn_histories << turn_data
     end
   end
 

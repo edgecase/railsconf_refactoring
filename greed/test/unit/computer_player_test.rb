@@ -10,6 +10,10 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       assert_instance_of Randy, @player.logic
     end
 
+    should 'have an initial score of zero' do
+      assert_equal 0, @player.score
+    end
+
     context 'with a strategy' do
       setup do
         @strategy = flexmock("Strategy")
@@ -45,8 +49,11 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
       
       should "get the points of the roll" do
-        assert_equal [@player, 0, [RollData.new([4,2,2,3,3], 0, 0, 5, :bust)]],
-          @player.take_turn
+        assert_equal TurnData.new(
+          @player,
+          0,
+          [RollData.new([4,2,2,3,3], 0, 0, 5, :bust)]
+          ), @player.take_turn
       end
     end
     
@@ -59,8 +66,11 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
       
       should "get the points of the roll" do
-        assert_equal [@player, 100, [RollData.new([1,2,2,3,3], 100, 100, 4, :hold)]],
-          @player.take_turn
+        assert_equal TurnData.new(
+          @player,
+          100,
+          [RollData.new([1,2,2,3,3], 100, 100, 4, :hold)]
+          ), @player.take_turn
       end
     end
     
@@ -81,13 +91,14 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         end
         
         should 'get the total points of the turn' do
-          assert_equal [@player,
+          assert_equal TurnData.new(
+            @player,
             150,
             [
               RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
               RollData.new([5,2,3,3], 150, 50, 3, :hold),
             ]
-          ], @player.take_turn
+          ), @player.take_turn
         end
       end
       
@@ -99,13 +110,14 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         end
         
         should 'get zero points for that turn' do
-          assert_equal  [@player,
+          assert_equal  TurnData.new(
+            @player,
             0,
             [
               RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
               RollData.new([4,2,3,3], 0, 0, 4, :bust),
             ]
-          ], @player.take_turn
+          ), @player.take_turn
         end
       end
     end
