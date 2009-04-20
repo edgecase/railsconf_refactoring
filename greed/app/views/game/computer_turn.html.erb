@@ -18,10 +18,12 @@
       </div>
       <div id="main">
         <h3>Rolls</h3>
-        <% 3.times do %>
-          <%= render :partial => "rolls", :locals => { :hold => false } -%>
-        <% end %>
-        <%= render :partial => "rolls", :locals => { :hold => true } -%>
+        <% @turn_histories.each do |player, score, history| -%>
+          <% history.each do |roll_data| -%>
+            <%= render :partial => "rolls",
+                  :locals => { :player => player, :roll_data => roll_data } -%>
+          <% end -%>
+        <% end -%>
       </div>
       <div id="footer">
         &nbsp

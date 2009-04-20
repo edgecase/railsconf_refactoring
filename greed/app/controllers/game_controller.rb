@@ -39,7 +39,11 @@ class GameController < ApplicationController
 
   def computer_turn
     @game = Game.find(params[:id])
-    @players = @game.computer_players + [@game.human_player]
+    @players = @game.players
+    @turn_histories = []
+    @game.computer_players.each do |cp|
+      @turn_histories << cp.take_turn
+    end
   end
 
 end

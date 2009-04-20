@@ -1,13 +1,24 @@
 <ul class="dice">
-  <li><%= image_tag 'die1.gif' %></li>
-  <li><%= image_tag 'die2.gif' %></li>
-  <li><%= image_tag 'die3.gif' %></li>
-  <li><%= image_tag 'die4.gif' %></li>
-  <li><%= image_tag 'die5.gif' %></li>
+  <% roll_data.roll.each do |face| -%>
+    <li><%= image_tag "die#{face}.gif" %></li>
+  <% end -%>
 </ul>
-<p>Score: 500</p>
-<% if hold %>
-  <h3>Randy held</h3>
-<% else %>
-  <h3>Randy rolled again</h3>
-<% end %>
+<p>
+  Turn Score: <%= roll_data.turn_score %>
+  Roll Points <%= roll_data.roll_points %>
+</p>
+<h3>
+  <%= player.name %>
+  <%=
+     case roll_data.action
+     when :hold
+       "held"
+     when :bust
+       "went bust"
+     when :roll
+       "rolled again"
+     else
+       "-Unknown action #{roll_data.action}-"
+     end
+ -%>
+</h3>

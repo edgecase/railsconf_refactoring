@@ -28,7 +28,7 @@ class ComputerPlayer < ActiveRecord::Base
       again(history, roller, turn_score)
       roller.roll(roller.unused)
     end
-    [turn_score, history]
+    [self, turn_score, history]
   end
   
   private

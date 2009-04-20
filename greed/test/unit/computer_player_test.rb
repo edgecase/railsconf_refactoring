@@ -45,7 +45,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
       
       should "get the points of the roll" do
-        assert_equal [0, [RollData.new([4,2,2,3,3], 0, 0, 5, :bust)]],
+        assert_equal [@player, 0, [RollData.new([4,2,2,3,3], 0, 0, 5, :bust)]],
           @player.take_turn
       end
     end
@@ -59,7 +59,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
       
       should "get the points of the roll" do
-        assert_equal [100, [RollData.new([1,2,2,3,3], 100, 100, 4, :hold)]],
+        assert_equal [@player, 100, [RollData.new([1,2,2,3,3], 100, 100, 4, :hold)]],
           @player.take_turn
       end
     end
@@ -81,7 +81,8 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         end
         
         should 'get the total points of the turn' do
-          assert_equal [150,
+          assert_equal [@player,
+            150,
             [
               RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
               RollData.new([5,2,3,3], 150, 50, 3, :hold),
@@ -98,7 +99,8 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         end
         
         should 'get zero points for that turn' do
-          assert_equal  [0,
+          assert_equal  [@player,
+            0,
             [
               RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
               RollData.new([4,2,3,3], 0, 0, 4, :bust),

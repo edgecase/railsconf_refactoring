@@ -105,6 +105,36 @@ class GameControllerTest < ActionController::TestCase
     end
   end
   
+
+  context 'Action computer_turn' do
+    setup do
+      @c1 = ComputerPlayer.new
+      @c2 = ComputerPlayer.new
+      @c1.logic = dummy_logic
+      @c2.logic = dummy_logic
+      @game = existing_game
+      @game.computer_players = [@c1, @c2]
+      @game.human_player = HumanPlayer.new
+    end
+
+    context 'with a two player game' do
+      setup do
+        flexmock(@c1).should_receive(:take_turn).once.and_return(fake_history)
+        flexmock(@c2).should_receive(:take_turn).once.and_return(fake_history)
+        get :computer_turn, :id => @game.id
+      end
+
+      should 'let all the computer players take a turn' do
+        # test in mock setups
+      end
+
+      should 'return the turn histories' do
+        assert_equal [fake_history, fake_history],
+          assigns(:turn_histories)
+      end
+    end
+  end
+
   private
 
   def post_assign_players(players)
@@ -127,5 +157,16 @@ class GameControllerTest < ActionController::TestCase
     flexmock(Game).should_receive(:find).with(/^#{game.id}$/).
       and_return(game)
     game
+  end
+
+  def dummy_logic
+    flexmock("logic",
+      :name => "Dummy",
+      :description => "Dummy Logic",
+      :roll_again? => false)
+  end
+
+  def fake_history
+    @fake_history ||= [ComputerPlayer.new, 0, []]
   end
 end
