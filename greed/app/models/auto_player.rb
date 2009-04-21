@@ -1,5 +1,5 @@
 class AutoPlayer
   def self.players
-    [Randy, Connie]
+    [Randy, Connie, Aggie]
   end
 end

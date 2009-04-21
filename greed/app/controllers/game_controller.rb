@@ -38,8 +38,7 @@ class GameController < ApplicationController
   end
 
   def computer_turn
-    @game = Game.find(params[:id])
-    @players = @game.players
+    setup_page_data
     @turn_histories = []
     @game.computer_players.each do |cp|
       turn_data = cp.take_turn
@@ -47,6 +46,21 @@ class GameController < ApplicationController
       cp.save
       @turn_histories << turn_data
     end
+  end
+
+  def human_turn
+    setup_page_data
+    @roll = []
+    roller = Roller.new
+    roller.roll(5)
+    @roll_data = RollData.new(roller.faces, 0, roller.points, roller.unused, :unknown)
+  end
+
+  private
+
+  def setup_page_data
+    @game = Game.find(params[:id])
+    @players = @game.players
   end
 
 end

@@ -149,6 +149,22 @@ class GameControllerTest < ActionController::TestCase
     end
   end
 
+  # ------------------------------------------------------------------  
+
+  context 'Action human_turn' do
+    setup do
+      @game = existing_game
+      @game.human_player = HumanPlayer.new
+    end
+
+    should 'have a game and a roll' do
+      get :human_turn, :id => @game.id
+
+      assert_not_nil assigns(:game)
+      assert_not_nil assigns(:roll_data)
+    end
+  end
+  
   private
 
   def post_assign_players(players)
