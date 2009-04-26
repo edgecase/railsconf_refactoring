@@ -19,6 +19,7 @@ Feature: Create a game
     And I press "Next"
     And I check "Randy"
     And I check "Connie"
+    And I press "Play"
     Then I should see "Randy"
     And I should see "Connie"
     And I should see "John"
