@@ -3,13 +3,13 @@ class GameController < ApplicationController
   end
 
   def create
-    @game = Game.create
-    @game.human_player = HumanPlayer.create(params[:player])
-    if @game.save
+    @human_player = HumanPlayer.create(params[:game])
+    @game = Game.create(:human_player => @human_player)
+    if @game.human_player.save && @game.save
       session[:game] = @game.id
       redirect_to choose_players_game_path(@game)
     else
-      flash[:error] = "Can not create game"
+      flash[:error] = @human_player.errors.full_messages.join(', ')
       redirect_to new_game_path
     end
   end

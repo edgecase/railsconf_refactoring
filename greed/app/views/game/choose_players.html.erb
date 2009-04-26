@@ -7,6 +7,7 @@
       <div id="header">
         <h1>Greed!</h1>
       </div>
+      <h2>Welcome to Greed, <%= @game.human_player.name %></h2>
       <h3>Select the players</h3>
       <% if flash[:error] -%>
         <div class="error_message"><%= flash[:error] %></div>
