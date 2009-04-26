@@ -12,3 +12,13 @@ Feature: Create a game
     When I fill in "game_name" with "John"
     And I press "Next"
     Then I am asked to choose players
+    
+  Scenario: Creating the game as a whole
+    Given I go to the homepage
+    When I fill in "game_name" with "John"
+    And I press "Next"
+    And I check "Randy"
+    And I check "Connie"
+    Then I should see "Randy"
+    And I should see "Connie"
+    And I should see "John"
