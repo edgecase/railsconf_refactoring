@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GameControllerTest < ActionController::TestCase
+class GamesControllerTest < ActionController::TestCase
   def post_create
     post :create, :game => { :name => "Bob" }
   end

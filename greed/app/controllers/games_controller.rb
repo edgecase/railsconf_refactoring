@@ -1,4 +1,4 @@
-class GameController < ApplicationController
+class GamesController < ApplicationController
   def new
   end
 
