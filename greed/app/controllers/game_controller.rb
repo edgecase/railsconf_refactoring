@@ -9,7 +9,8 @@ class GameController < ApplicationController
       session[:game] = @game.id
       redirect_to choose_players_game_path(@game)
     else
-      flash[:error] = @human_player.errors.full_messages.join(', ')
+      flash[:error] = "Can not create game\n"
+      flash[:error] << @human_player.errors.full_messages.join(', ')
       redirect_to new_game_path
     end
   end
