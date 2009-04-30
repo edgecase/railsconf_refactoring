@@ -16,6 +16,9 @@ body {
 h1 {
   margin-bottom: 25px;
   border-bottom: 1px solid #FF6600;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-style: italic;
   text-transform: uppercase;
 }
 
