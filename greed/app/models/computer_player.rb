@@ -10,7 +10,7 @@ class ComputerPlayer < ActiveRecord::Base
     @logic ||= make_strategy
   end
 
-  def take_turn
+  def take_turn(game)
     history = []
     turn_score = 0
     roller.roll(5)
@@ -28,6 +28,7 @@ class ComputerPlayer < ActiveRecord::Base
       again(history, roller, turn_score)
       roller.roll(roller.unused)
     end
+    Turn.create(:game => game, :player_id => self.id, :score => turn_score)
     TurnData.new(self, turn_score, history)
   end
   

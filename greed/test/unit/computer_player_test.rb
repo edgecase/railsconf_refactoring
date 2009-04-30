@@ -53,7 +53,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
           @player,
           0,
           [RollData.new([4,2,2,3,3], 0, 0, 5, :bust)]
-          ), @player.take_turn
+          ), @player.take_turn(Game.new)
       end
     end
     
@@ -70,7 +70,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
           @player,
           100,
           [RollData.new([1,2,2,3,3], 100, 100, 4, :hold)]
-          ), @player.take_turn
+          ), @player.take_turn(Game.new)
       end
     end
     
@@ -98,7 +98,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
               RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
               RollData.new([5,2,3,3], 150, 50, 3, :hold),
             ]
-          ), @player.take_turn
+          ), @player.take_turn(Game.new)
         end
       end
       
@@ -117,7 +117,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
               RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
               RollData.new([4,2,3,3], 0, 0, 4, :bust),
             ]
-          ), @player.take_turn
+          ), @player.take_turn(Game.new)
         end
       end
     end
