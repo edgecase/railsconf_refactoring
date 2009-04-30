@@ -1,6 +1,9 @@
 <% if current %>
   <li class="current_player"><%= player.name %></li>
 <% else %>
-  <li><%= player.name %> -- <%= player.score %> points</li>
+  <li>
+   <span class="score"><%= player.score %> points</span>
+   <span class="player_name"><%= player.name %></span>
+  </li>
 <% end %>
-<p><%=h player.description %></p>
+<p class="description"><%=h player.description %></p>

@@ -3,14 +3,18 @@
 <% if flash[:error] -%>
   <div class="error_message"><%= flash[:error] %></div>
 <% end -%>
-<% form_for :game, :url => assign_players_game_path(@game) do |f| %>
+<% form_for :game, :url => assign_players_game_path(@game), :html => {:class => 'select_players'} do |f| %>
   <%= f.error_messages %>
-  <% @players.each do |player| -%>
-    <%= check_box_tag "players[]", player.to_s, false, :id => player.name %>
-    <%= label_tag player.name  %>
-  <% end -%>
-  <p>
+  <div class="field">
+    <% @players.each do |player| -%>
+      <label>
+        <%= check_box_tag "players[]", player.to_s, false, :id => player.name %>
+        <%= player.name %>
+      </label>
+    <% end -%>
+  </div>
+  <div class="submit">
     <%= f.submit "Play" %>
-  </p>
+  </div>
 <% end -%>
 

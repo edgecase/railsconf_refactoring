@@ -2,12 +2,12 @@
   <% roll_data.roll.each do |face| -%>
     <li><%= image_tag "die#{face}.gif" %></li>
   <% end -%>
-  <li>(<%= roll_data.roll_points %> points in this roll)</li>
+  <li class="point_earned">(<%= roll_data.roll_points %> points in this roll)</li>
 </ul>
-<p>
-  Score for this turn: <%= roll_data.turn_score %>
-</p>
-<h4>
+
+<p class="score_for_turn">Score for this turn: <%= roll_data.turn_score %></p>
+
+<p class="action">
   <%= player.name %>
   <%=
      case roll_data.action
@@ -21,4 +21,4 @@
        "-Unknown action #{roll_data.action}-"
      end
  -%>
-</h4>
+</p>

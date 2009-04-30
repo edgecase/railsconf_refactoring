@@ -4,7 +4,7 @@
 <% end -%>
 <% form_for :game, :url => { :action => "create" } do |f| %>
   <%= f.error_messages %>
-  <%= f.label "Your name:" -%>
+  <%= f.label :name, "Your name:" -%>
   <%= f.text_field "name" %>
   <%= f.submit "Next" %>
 <% end -%>

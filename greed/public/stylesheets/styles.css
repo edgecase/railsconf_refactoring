@@ -1,54 +1,132 @@
-html {
-    background:#A7A09A none repeat scroll 0 0;
-    color:#000000;
-    margin:0;
-    padding:0;
-}
-
 body {
-    min-width:750px;
+  color: #000000;
+  font-family: georgia, serif;
+  background: #A7A09A;
 }
 
 #wrap {
-    background:#FFFFFF none repeat scroll 0 0;
-    margin:0 auto;
-    width:750px;
+  width: 750px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background: #FFFFFF;
 }
 
-#header {
-    border-bottom:2px solid #FF6600;
+h1 {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #FF6600;
+  text-transform: uppercase;
 }
+
+h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form.select_players label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
 
 #sidebar {
-    float:left;
-    width:250px;
+  float: left;
+  width: 230px;
+  padding: 10px;
+  background: #eee;
 }
+
+#sidebar h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+#sidebar li {
+  font-size: 16px;
+}
+
+#sidebar p.description {
+  margin-bottom: 1.25em;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#sidebar .score {
+  float: right;
+  font-size: 12px;
+}
+
 
 #main {
-    border-left:1px solid #FF0000;
-    float:right;
-    padding-left:15px;
-    width:480px;
+  float: right;
+  width: 480px;
+  padding-left: 15px;
 }
 
-#footer {
-    clear:both;
+#main h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#main p.your_turn a {
+  display: block;
+  padding: 10px;
+  background: #f3f3f3;
+}
+
+#main p.your_turn a:hover {
+  background: #d9d9d9;
+}
+
+
+.turn {
+  margin-bottom: 20px;
 }
 
 .current_player {
-    color:#FF0000;
-}
-
-.dice ul {
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    margin:0;
-    padding:0;
+  color: #FF0000;
 }
 
 .dice li {
-    display:inline;
-    margin:0;
-    padding:0;
+  display: inline;
+}
+
+.dice li.point_earned {
+  font-size: 12px;
+}
+
+p.score_for_turn {
+  margin-bottom: 10px;
+}
+
+p.action {
+  margin-bottom: 1em;
+  padding-left: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+p.user_actions a {
+  margin-right: 10px;
+}
+
+form .field {
+  margin-bottom: 10px;
+}
+
+form .submit {
+  margin-bottom: 10px;
+}
+
+.error_message {
+  margin-bottom: 10px;
+  padding: 5px 0 5px 10px;
+  color: #ffffff;
+  font-weight: bold;
+  background: #d00;
 }
