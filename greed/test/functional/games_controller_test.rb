@@ -1,25 +1,22 @@
 require 'test_helper'
 
-
-class GameControllerTest < ActionController::TestCase
+class GamesControllerTest < ActionController::TestCase
   def post_create
-    post :create, :player => { :name => "Bob" }
+    post :create, :game => { :name => "Bob" }
   end
 
   # ------------------------------------------------------------------
 
   context "Action Create" do
     setup do
-      @game = new_game
-      @player = HumanPlayer.new
-      flexmock(HumanPlayer).should_receive(:create).
-        with("name" => "Bob").once.
-        and_return(@player)
+      @player = new_player
+      @game = new_game(@player)
     end
 
     context 'when the save worked' do
       setup do
-        flexmock(@game).should_receive(:save).once.and_return(true)
+        flexmock(@game).should_receive(:save).and_return(true)
+        flexmock(@player).should_receive(:save).and_return(true)
         post_create
       end
       
@@ -42,7 +39,8 @@ class GameControllerTest < ActionController::TestCase
 
     context 'when the save failed' do
       setup do
-        flexmock(@game).should_receive(:save).once.and_return(false)
+        flexmock(@game).should_receive(:save).and_return(false)
+        flexmock(@player).should_receive(:save).and_return(false)
         post_create
       end
 
@@ -51,7 +49,7 @@ class GameControllerTest < ActionController::TestCase
       end
       
       should 'have an error message' do
-        assert_equal "Can not create game", flash[:error]
+        assert_match /Can not create game/, flash[:error]
       end
     end
   end
@@ -61,6 +59,7 @@ class GameControllerTest < ActionController::TestCase
   context 'Action choose_players' do
     setup do
       @game = existing_game
+      @game.human_player = HumanPlayer.new(:name => "Bob")
       get :choose_players, :id => @game.id
     end
 
@@ -172,11 +171,20 @@ class GameControllerTest < ActionController::TestCase
       :id => @game.id,
       :players => players
   end
+  
+  def new_player
+    player = HumanPlayer.new
+    flexmock(HumanPlayer).should_receive(:create).
+      with("name" => "Bob").once.
+      and_return(player)
+    player
+  end
 
-  def new_game
-    game = Game.new
+  def new_game(player)
+    game = Game.new(:human_player => player)
     flexmock(game).should_receive(:id).and_return(123)
-    flexmock(Game).should_receive(:create).with().once.
+    flexmock(Game).should_receive(:create).once.
+      with(:human_player => player).
       and_return(game)
     game
   end

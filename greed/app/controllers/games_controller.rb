@@ -1,4 +1,4 @@
-class GameController < ApplicationController
+class GamesController < ApplicationController
   def new
   end
 
@@ -9,7 +9,8 @@ class GameController < ApplicationController
       session[:game] = @game.id
       redirect_to choose_players_game_path(@game)
     else
-      flash[:error] = @human_player.errors.full_messages.join(', ')
+      flash[:error] = "Can not create game\n"
+      flash[:error] << @human_player.errors.full_messages.join(', ')
       redirect_to new_game_path
     end
   end
@@ -41,7 +42,7 @@ class GameController < ApplicationController
     setup_page_data
     @turn_histories = []
     @game.computer_players.each do |cp|
-      turn_data = cp.take_turn
+      turn_data = cp.take_turn(@game)
       cp.score += turn_data.turn_score
       cp.save
       @turn_histories << turn_data

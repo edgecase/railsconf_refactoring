@@ -1,0 +1,21 @@
+<div id="sidebar">
+  <h2>Players</h2>
+  <ul>
+    <% @players.each do |player| -%>
+      <%= render :partial => "player",
+            :locals => { :player => player, :current => false } -%>
+    <% end -%>
+  </ul>        
+</div>
+
+<div id="main">
+  <h2>Your Turn</h2>
+  <%= render :partial => "rolls",
+        :locals => { :player => @game.human_player, :roll_data => @roll_data } -%>
+
+  <p class="user_actions">
+    <%= link_to "Roll again?", human_turn_game_path(@game) %>
+    <%= link_to "Hold?", human_turn_game_path(@game) %>
+  </p>
+</div>
+

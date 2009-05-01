@@ -1,0 +1,20 @@
+<h2>Welcome to Greed, <%= @game.human_player.name %></h2>
+<h3>Select the players</h3>
+<% if flash[:error] -%>
+  <div class="error_message"><%= flash[:error] %></div>
+<% end -%>
+<% form_for :game, :url => assign_players_game_path(@game), :html => {:class => 'select_players'} do |f| %>
+  <%= f.error_messages %>
+  <div class="field">
+    <% @players.each do |player| -%>
+      <label>
+        <%= check_box_tag "players[]", player.to_s, false, :id => player.name %>
+        <%= player.name %>
+      </label>
+    <% end -%>
+  </div>
+  <div class="submit">
+    <%= f.submit "Play" %>
+  </div>
+<% end -%>
+

@@ -1,0 +1,11 @@
+<h3>Welcome to Greed</h3>
+<% if flash[:error] -%>
+  <div class="error_message"><%= flash[:error] %></div>
+<% end -%>
+<% form_for :game, :url => { :action => "create" } do |f| %>
+  <%= f.error_messages %>
+  <%= f.label :name, "Your name:" -%>
+  <%= f.text_field "name" %>
+  <%= f.submit "Next" %>
+<% end -%>
+

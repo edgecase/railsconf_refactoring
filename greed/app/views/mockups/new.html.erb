@@ -8,10 +8,7 @@
         <h1>Greed!</h1>
       </div>
       <h3>Welcome to Greed</h3>
-      <% if flash[:error] -%>
-        <div class="error_message"><%= flash[:error] %></div>
-      <% end -%>
-      <% form_for :game, :url => { :action => "create" } do |f| %>
+      <% form_for :game,:url => '#' do |f| %>
         <%= f.error_messages %>
         <%= f.label "Your name:" -%>
         <%= f.text_field "name" %>
@@ -23,4 +20,3 @@
     </div>
   </body>
 </html>
-
