@@ -2,3 +2,4 @@
 *.sqlite3
 tmp
 .zsh_rake_cache
+.DS_Store

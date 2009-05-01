@@ -1,25 +1,22 @@
 body {
-  color: #000000;
+  color: #000;
   font-family: georgia, serif;
-  background: #A7A09A;
+  background: #eee url(/images/logo.png) no-repeat 50% 66px;
 }
 
 #wrap {
-  width: 750px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  background: #FFFFFF;
+  width: 566px;
+  margin: 0 auto;
+  padding-top: 154px;
+/*  background: rgba(255, 255, 255, 0.25); */
 }
 
 h1 {
   margin-bottom: 25px;
-  border-bottom: 1px solid #FF6600;
-  padding-bottom: 15px;
-  font-size: 18px;
-  font-style: italic;
-  text-transform: uppercase;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.025em;
 }
 
 h3 {
@@ -27,17 +24,38 @@ h3 {
   font-weight: bold;
 }
 
-form.select_players label {
-  margin-right: 10px;
-  font-size: 14px;
+form {
+  font-family: helvetica, arial, sans-serif;
+}
+
+label {
+  color: #333;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+input {
+  font-family: arial, sans-serif;
+}
+
+input[type=submit] {
+  border: 0;
+  padding: 7px 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0 #cf0000;
+  background: #cf0000;
+  -webkit-border-radius: 4px;
+  cursor: pointer;
 }
 
 
 #sidebar {
   float: left;
-  width: 230px;
-  padding: 10px;
-  background: #eee;
+  width: 187px;
 }
 
 #sidebar h2 {
@@ -66,8 +84,9 @@ form.select_players label {
 
 #main {
   float: right;
-  width: 480px;
-  padding-left: 15px;
+  width: 350px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
 }
 
 #main h2 {
@@ -132,4 +151,29 @@ form .submit {
   color: #ffffff;
   font-weight: bold;
   background: #d00;
+}
+
+form#new_game {
+  padding: 50px 0 0 100px;
+}
+
+form#new_game label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form#new_game input[type=text] {
+  width: 295px;
+  border: 1px solid #b1b1b1;
+  padding: 12px 5px;
+  font-size: 24px;
+  background: #fff;
+}
+
+form#select_players {
+  padding: 50px 0 0 222px;
+}
+
+form#select_players .submit {
+  padding-top: 20px;
 }
