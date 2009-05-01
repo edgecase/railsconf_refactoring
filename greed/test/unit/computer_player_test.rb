@@ -19,15 +19,18 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         @strategy = flexmock("Strategy")
         @player.instance_variable_set("@logic", @strategy)
       end
-      should 'delegate name' do
+
+      should 'delegate name to strategy' do
         @strategy.should_receive(:name).once
         @player.name
       end
-      should 'delegate description' do
+
+      should 'delegate description to strategy' do
         @strategy.should_receive(:description).once
         @player.description
       end
-      should 'delegate roll_again?' do
+
+      should 'delegate roll_again to strategy' do
         @strategy.should_receive(:roll_again?).once
         @player.roll_again?
       end
@@ -48,7 +51,7 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         flexmock(@player).should_receive(:roll_again?).never
       end
       
-      should "get the points of the roll" do
+      should "zero points" do
         assert_equal TurnData.new(
           @player,
           0,

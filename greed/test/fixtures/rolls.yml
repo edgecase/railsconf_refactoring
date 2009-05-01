@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  score: 1
+  unused: 1
+  action: MyString
+
+two:
+  score: 1
+  unused: 1
+  action: MyString

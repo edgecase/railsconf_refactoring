@@ -9,12 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090428151959) do
+ActiveRecord::Schema.define(:version => 20090501194952) do
 
   create_table "computer_players", :force => true do |t|
     t.string   "strategy"
     t.integer  "score",      :default => 0
     t.integer  "game_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "faces", :force => true do |t|
+    t.integer  "value"
+    t.integer  "roll_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,6 +35,14 @@ ActiveRecord::Schema.define(:version => 20090428151959) do
     t.string   "name"
     t.integer  "score"
     t.integer  "game_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rolls", :force => true do |t|
+    t.integer  "score"
+    t.integer  "unused"
+    t.string   "action"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
