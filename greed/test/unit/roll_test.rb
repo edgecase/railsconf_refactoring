@@ -9,21 +9,42 @@ class RollTest < ActiveSupport::TestCase
 
     context 'with several faces' do
       setup do
-        @f2 = Face.new(:value => 2)
-        @f3 = Face.new(:value => 3)
-        @roll.faces = [@f2, @f3]
-      end
-
-      should 'know its faces' do
-        assert_equal [@f2, @f3], @roll.faces
+        @faces = [
+          Face.new(:value => 2),
+          Face.new(:value => 3),
+          Face.new(:value => 5),
+          Face.new(:value => 5),
+        ]
+        @roll.faces = @faces
       end
 
       should 'know its turn' do
         assert_equal @turn, @roll.turn
       end
 
-      should 'know its score' do
-        
+      should 'know its face values' do
+        assert_equal [2, 3, 5, 5], @roll.face_values
+      end
+
+      should 'know its points' do
+        assert_equal 100, @roll.points
+      end
+
+      should 'know its unused die count' do
+        assert_equal 2, @roll.unused
+      end
+
+      should 'not have an action' do
+        assert_nil @roll.action
+      end
+
+      context 'when an action is added' do
+        setup do
+          @roll.action = "roll"
+        end
+        should 'know its action' do
+          assert_equal "roll", @roll.action
+        end
       end
     end
   end
