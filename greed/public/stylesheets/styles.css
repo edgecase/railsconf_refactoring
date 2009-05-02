@@ -230,10 +230,22 @@ form#select_players .submit {
 }
 
 
+#result {
+  padding-left: 206px;
+}
+
+#result p {
+  margin-bottom: 40px;
+  font-size: 21px;
+  font-style: italic;
+}
+
+
 .error_message {
   margin-bottom: 10px;
   padding: 5px 0 5px 10px;
   color: #ffffff;
   font-weight: bold;
+  text-align: center;
   background: #d00;
 }

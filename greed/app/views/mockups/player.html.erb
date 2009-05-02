@@ -1,30 +1,14 @@
-<html>
-  <head>
-    <%= stylesheet_link_tag 'styles' %>
-  </head>
-  <body>
-    <div id="wrap">
-      <div id="header">
-        <h1>Greed!</h1>
-      </div>
-      <div id="sidebar">
-        <h2>Players</h2>
-        <ul>
-          <%= render :partial => "players", :locals => { :player => "Randy", :current => true } -%>
-          <%= render :partial => "players", :locals => { :player => "Sandy", :current => false } -%>
-          <%= render :partial => "players", :locals => { :player => "You", :current => false } -%>
-        </ul>        
-      </div>
-      <div id="main">
-        <h3>Rolls</h3>
-        <% 3.times do %>
-          <%= render :partial => "rolls", :locals => { :hold => false } -%>
-        <% end %>
-        <%= render :partial => "rolls", :locals => { :hold => true } -%>
-      </div>
-      <div id="footer">
-        &nbsp
-      </div>
-    </div>
-  </body>
-</html>
+<div id="sidebar">
+  <ul>
+    <%= render :partial => "players", :locals => { :player => "Randy", :current => true } -%>
+    <%= render :partial => "players", :locals => { :player => "Sandy", :current => false } -%>
+    <%= render :partial => "players", :locals => { :player => "You", :current => false } -%>
+  </ul>        
+</div>
+<div id="main">
+  <h3>Rolls</h3>
+  <% 3.times do %>
+    <%= render :partial => "rolls", :locals => { :hold => false } -%>
+  <% end %>
+  <%= render :partial => "rolls", :locals => { :hold => true } -%>
+</div>
