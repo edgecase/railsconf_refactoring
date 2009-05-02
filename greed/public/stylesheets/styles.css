@@ -1,14 +1,14 @@
 body {
   color: #000;
   font-family: georgia, serif;
-  background: #eee url(/images/logo.png) no-repeat 50% 66px;
+  background: #eee;
 }
 
 #wrap {
   width: 566px;
   margin: 0 auto;
   padding-top: 154px;
-/*  background: rgba(255, 255, 255, 0.25); */
+  background: url(/images/logo.png) no-repeat 103px 66px;
 }
 
 h1 {
@@ -24,31 +24,20 @@ h3 {
   font-weight: bold;
 }
 
-form {
-  font-family: helvetica, arial, sans-serif;
-}
-
-label {
-  color: #333;
-  font-size: 21px;
-  font-weight: bold;
-  letter-spacing: -0.025em;
-}
-
-input {
-  font-family: arial, sans-serif;
-}
-
+a.button,
 input[type=submit] {
   border: 0;
   padding: 7px 30px;
   color: #fff;
+  font-family: arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
+  text-decoration: none;
   text-transform: uppercase;
   text-shadow: 0 0 0 #cf0000;
   background: #cf0000;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   cursor: pointer;
 }
 
@@ -56,6 +45,21 @@ input[type=submit] {
 #sidebar {
   float: left;
   width: 187px;
+  padding-top: 22px;
+}
+
+#sidebar h1 {
+  margin-bottom: 15px;
+  font-family: georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  text-align: right;
+}
+
+#sidebar h1 span {
+  border-bottom: 1px solid #cbcbcb;
+  color: #555;
 }
 
 #sidebar h2 {
@@ -67,26 +71,40 @@ input[type=submit] {
 }
 
 #sidebar li {
-  font-size: 16px;
+  margin-bottom: 9px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  background: url(/images/dotted_underline.png) repeat-x 0 100%;
 }
 
-#sidebar p.description {
-  margin-bottom: 1.25em;
+#sidebar li.current_player span.player_name {
+  margin-left: -12px;
+  padding-left: 12px;
+  background: url(/images/current_player.png) no-repeat 0% 50%;
+}
+
+#sidebar span.description {
+  color: #555;
   font-size: 12px;
   font-style: italic;
 }
 
+#sidebar span.player_name {
+  display: block;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+
 #sidebar .score {
   float: right;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 
 #main {
   float: right;
-  width: 350px;
-  border: 1px solid #c3c3c3;
-  background: #fff;
+  width: 360px;
 }
 
 #main h2 {
@@ -105,52 +123,85 @@ input[type=submit] {
   background: #d9d9d9;
 }
 
+#rolls {
+  margin-bottom: 25px;
+  border: 1px solid #c3c3c3;
+  padding: 20px 20px 5px 20px;
+  background: #fff;
+  -moz-border-radius: 4px;
+}
 
 .turn {
   margin-bottom: 20px;
 }
 
-.current_player {
-  color: #FF0000;
+.turn h1 {
+  margin-bottom: 12px;
+  color: #cf0000;
+  font-size: 18px;
+}
+
+.dice {
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 6px 0 5px 0;
 }
 
 .dice li {
+  float: left;
   display: inline;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.dice li img {
+  display: block;
 }
 
 .dice li.point_earned {
+  float: right;
+  width: auto;
   font-size: 12px;
+  line-height: 18px;
 }
 
 p.score_for_turn {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 p.action {
-  margin-bottom: 1em;
-  padding-left: 10px;
+  margin-bottom: 5px;
   font-size: 12px;
   font-style: italic;
 }
 
-p.user_actions a {
-  margin-right: 10px;
+
+form {
+  font-family: helvetica, arial, sans-serif;
 }
 
+label {
+  color: #333;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+input {
+  font-family: arial, sans-serif;
+}
 form .field {
   margin-bottom: 10px;
 }
 
 form .submit {
   margin-bottom: 10px;
-}
-
-.error_message {
-  margin-bottom: 10px;
-  padding: 5px 0 5px 10px;
-  color: #ffffff;
-  font-weight: bold;
-  background: #d00;
 }
 
 form#new_game {
@@ -171,9 +222,18 @@ form#new_game input[type=text] {
 }
 
 form#select_players {
-  padding: 50px 0 0 222px;
+  padding: 50px 0 0 207px;
 }
 
 form#select_players .submit {
   padding-top: 20px;
+}
+
+
+.error_message {
+  margin-bottom: 10px;
+  padding: 5px 0 5px 10px;
+  color: #ffffff;
+  font-weight: bold;
+  background: #d00;
 }

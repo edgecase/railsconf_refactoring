@@ -1,8 +1,8 @@
 <ul class="dice">
+  <li class="point_earned"><%= roll_data.roll_points %> points</li>
   <% roll_data.roll.each do |face| -%>
     <li><%= image_tag "die#{face}.gif" %></li>
   <% end -%>
-  <li class="point_earned">(<%= roll_data.roll_points %> points in this roll)</li>
 </ul>
 
 <p class="score_for_turn">Score for this turn: <%= roll_data.turn_score %></p>

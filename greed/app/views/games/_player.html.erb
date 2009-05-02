@@ -1,12 +1,5 @@
-<% if current %>
-  <li class="current_player"><%= player.name %></li>
-<% else %>
-  <li>
-   <span class="score"><%= player.score %> points</span>
-   <span class="player_name"><%= player.name %></span>
-  </li>
-<% end %>
-<!-- 
-Is this being used? 
-<p class="description"><%=h player.description %></p>
--->
+<li<%= ' class="current_player"' if current %>>
+  <span class="player_name"><%= player.name %></span>
+  <span class="score"><%= player.score %></span>
+  <span class="description"><%=h player.description %></span>
+</li>

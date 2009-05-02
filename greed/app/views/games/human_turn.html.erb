@@ -1,5 +1,5 @@
 <div id="sidebar">
-  <h2>Players</h2>
+  <h1><span>total points</span></h1>
   <ul>
     <% @players.each do |player| -%>
       <%= render :partial => "player",
@@ -9,13 +9,17 @@
 </div>
 
 <div id="main">
-  <h2>Your Turn</h2>
-  <%= render :partial => "rolls",
-        :locals => { :player => @game.human_player, :roll_data => @roll_data } -%>
+  <div id="rolls">
+    <div class="turn">
+      <h1>Your Turn</h1>
+      <%= render :partial => "rolls",
+            :locals => { :player => @game.human_player, :roll_data => @roll_data } -%>
 
-  <p class="user_actions">
-    <%= link_to "Roll again?", human_turn_game_path(@game) %>
-    <%= link_to "Hold?", human_turn_game_path(@game) %>
+    </div>
+  </div>
+  <p>
+    <%= link_to "Roll again", human_turn_game_path(@game), :class => 'button' %>
+    <%= link_to "Hold", human_turn_game_path(@game), :class => 'button' %>
   </p>
 </div>
 
