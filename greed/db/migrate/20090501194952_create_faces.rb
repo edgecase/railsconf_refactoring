@@ -3,6 +3,7 @@ class CreateFaces < ActiveRecord::Migration
     create_table :faces do |t|
       t.integer :value
       t.integer :roll_id
+      t.integer :position
 
       t.timestamps
     end

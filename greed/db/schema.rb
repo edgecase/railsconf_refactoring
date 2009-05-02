@@ -11,17 +11,10 @@
 
 ActiveRecord::Schema.define(:version => 20090501194952) do
 
-  create_table "computer_players", :force => true do |t|
-    t.string   "strategy"
-    t.integer  "score",      :default => 0
-    t.integer  "game_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "faces", :force => true do |t|
     t.integer  "value"
     t.integer  "roll_id"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,10 +24,12 @@ ActiveRecord::Schema.define(:version => 20090501194952) do
     t.datetime "updated_at"
   end
 
-  create_table "human_players", :force => true do |t|
+  create_table "players", :force => true do |t|
+    t.string   "type"
     t.string   "name"
-    t.integer  "score"
     t.integer  "game_id"
+    t.integer  "score",      :default => 0
+    t.string   "strategy"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,14 +38,16 @@ ActiveRecord::Schema.define(:version => 20090501194952) do
     t.integer  "score"
     t.integer  "unused"
     t.string   "action"
+    t.integer  "turn_id"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "turns", :force => true do |t|
-    t.integer  "game_id"
     t.integer  "player_id"
     t.integer  "score"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

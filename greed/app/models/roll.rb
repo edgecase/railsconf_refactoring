@@ -1,9 +1,10 @@
 class Roll < ActiveRecord::Base
   has_many :faces
   belongs_to :turn
+  acts_as_list :scope => :turn
 
   def face_values
-    @faces.map { |f| f.value }
+    faces.map { |f| f.value }
   end
 
   def points

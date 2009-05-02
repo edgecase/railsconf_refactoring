@@ -1,5 +1,5 @@
 Then /^I am asked to choose players$/ do
-  response.should contain("Select the players")
+  response.should contain("Select Your Opponents")
 end
 
 Given /^I start a game$/ do 

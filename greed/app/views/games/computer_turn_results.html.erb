@@ -10,12 +10,12 @@
 
 <div id="main">
   <div id="rolls">
-  <% @turn_histories.each do |turn_data| -%>
+  <% @turn_histories.each do |turn| -%>
     <div class="turn">
-      <h1><%= turn_data.player.name %>'s Turn</h1>
-      <% turn_data.history.each do |roll_data| -%>
+      <h1><%= turn.player.name %>'s Turn</h1>
+      <% turn.rolls.each do |roll| -%>
         <%= render :partial => "rolls",
-              :locals => { :player => turn_data.player, :roll_data => roll_data } -%>
+              :locals => { :player => turn.player, :roll => roll } -%>
       <% end -%>
     </div>
   <% end -%>

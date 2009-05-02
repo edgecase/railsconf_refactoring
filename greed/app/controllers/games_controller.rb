@@ -40,13 +40,17 @@ class GamesController < ApplicationController
 
   def computer_turn
     setup_page_data
-    @turn_histories = []
     @game.computer_players.each do |cp|
-      turn_data = cp.take_turn(@game)
-      cp.score += turn_data.turn_score
+      turn = cp.take_turn
+      cp.score += turn.score
       cp.save
-      @turn_histories << turn_data
     end
+    redirect_to computer_turn_results_game_path(@game)
+  end
+
+  def computer_turn_results
+    setup_page_data
+    @turn_histories = @players.map { |p| p.last_turn }
   end
 
   def human_turn

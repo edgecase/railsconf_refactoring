@@ -1,9 +1,10 @@
 class CreateTurns < ActiveRecord::Migration
   def self.up
     create_table :turns do |t|
-      t.integer :game_id
       t.integer :player_id
       t.integer :score
+      t.integer :position
+
       t.timestamps
     end
   end

@@ -5,3 +5,6 @@ require 'webrat'
 Webrat.configure do |config|
   config.mode = :rails
 end
+
+def pending_context(*args, &block)
+end

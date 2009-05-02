@@ -1,4 +1,5 @@
-class ComputerPlayer < ActiveRecord::Base
+class ComputerPlayer < Player
+
   delegate :name, :description, :roll_again?, :to => :logic
   attr_writer :logic
 
@@ -10,7 +11,7 @@ class ComputerPlayer < ActiveRecord::Base
     @logic ||= make_strategy
   end
 
-  def take_turn(game)
+  def take_turn
     history = []
     turn_score = 0
     roller.roll(5)
@@ -28,8 +29,10 @@ class ComputerPlayer < ActiveRecord::Base
       again(history, roller, turn_score)
       roller.roll(roller.unused)
     end
-    Turn.create(:game => game, :player_id => self.id, :score => turn_score)
-    TurnData.new(self, turn_score, history)
+    Turn.create(
+      :player_id => self.id,
+      :score => turn_score,
+      :rolls => history)
   end
   
   private
@@ -47,7 +50,12 @@ class ComputerPlayer < ActiveRecord::Base
   end
 
   def record(history, roller, turn_score, action)
-    history << RollData.new(roller.faces, turn_score, roller.points, roller.unused, action)
+    roll = Roll.new(
+      :faces => roller.faces.map { |n| Face.new(:value => n) },
+      :score => roller.points,
+      :unused => roller.unused,
+      :action => action)
+    history << roll
   end
 
   def make_strategy

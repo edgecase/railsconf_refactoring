@@ -4,6 +4,8 @@ class CreateRolls < ActiveRecord::Migration
       t.integer :score
       t.integer :unused
       t.string :action
+      t.integer :turn_id
+      t.integer :position
 
       t.timestamps
     end

@@ -1,6 +1,4 @@
-class HumanPlayer < ActiveRecord::Base
-  belongs_to :game
-
+class HumanPlayer < Player
   validates_length_of :name, :within => 1..32
 
   def description

@@ -40,7 +40,8 @@ class ComputerPlayerTest < ActiveSupport::TestCase
 
   context 'A Computer Player' do
     setup do
-      @player = ComputerPlayer.new
+      @game = Game.new
+      @player = ComputerPlayer.new(:game => @game)
       @player.logic = @strategy
     end
     
@@ -52,11 +53,12 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
       
       should "zero points" do
-        assert_equal TurnData.new(
-          @player,
-          0,
-          [RollData.new([4,2,2,3,3], 0, 0, 5, :bust)]
-          ), @player.take_turn(Game.new)
+        turn = @player.take_turn
+        roll = turn.rolls.first
+        assert_equal :bust, roll.action
+        assert_equal [4,2,2,3,3], roll.face_values
+        assert_equal 0, roll.points
+        assert_equal 5, roll.unused
       end
     end
     
@@ -69,11 +71,12 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
       
       should "get the points of the roll" do
-        assert_equal TurnData.new(
-          @player,
-          100,
-          [RollData.new([1,2,2,3,3], 100, 100, 4, :hold)]
-          ), @player.take_turn(Game.new)
+        turn = @player.take_turn
+        roll = turn.rolls.first
+        assert_equal [1,2,2,3,3], roll.face_values
+        assert_equal 100, roll.points
+        assert_equal 4, roll.unused
+        assert_equal 100, turn.score
       end
     end
     
@@ -94,14 +97,8 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         end
         
         should 'get the total points of the turn' do
-          assert_equal TurnData.new(
-            @player,
-            150,
-            [
-              RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
-              RollData.new([5,2,3,3], 150, 50, 3, :hold),
-            ]
-          ), @player.take_turn(Game.new)
+          turn = @player.take_turn
+          assert_equal 150, turn.score
         end
       end
       
@@ -113,14 +110,8 @@ class ComputerPlayerTest < ActiveSupport::TestCase
         end
         
         should 'get zero points for that turn' do
-          assert_equal  TurnData.new(
-            @player,
-            0,
-            [
-              RollData.new([1,2,2,3,3], 100, 100, 4, :roll),
-              RollData.new([4,2,3,3], 0, 0, 4, :bust),
-            ]
-          ), @player.take_turn(Game.new)
+          turn = @player.take_turn
+          assert_equal 0, turn.score
         end
       end
     end

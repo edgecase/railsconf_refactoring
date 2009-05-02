@@ -5,7 +5,7 @@ Feature: Create a game
 
   Scenario: Default page 
     Given I go to the homepage
-    Then I should see "Your name:"
+    Then I should see "Your Name"
 
   Scenario: Adding players to a page
     Given I go to the homepage

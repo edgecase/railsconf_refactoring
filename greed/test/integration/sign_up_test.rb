@@ -1,7 +1,7 @@
 require File.expand_path(File.join(File.dirname(__FILE__), "test_helper"))
 
 class SignUpTest < ActionController::IntegrationTest
-  context 'When signing up for a game' do
+  pending_context 'When signing up for a game' do
     setup do
       visit "/"
     end

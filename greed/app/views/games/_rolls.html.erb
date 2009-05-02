@@ -1,24 +1,24 @@
 <ul class="dice">
-  <li class="point_earned"><%= roll_data.roll_points %> points</li>
-  <% roll_data.roll.each do |face| -%>
+  <li class="point_earned"><%= roll.points %> points</li>
+  <% roll.face_values.each do |face| -%>
     <li><%= image_tag "die#{face}.gif" %></li>
   <% end -%>
 </ul>
 
-<p class="score_for_turn">Score for this turn: <%= roll_data.turn_score %></p>
+<p class="score_for_turn">Score for this turn: <%= roll.turn.score %></p>
 
 <p class="action">
   <%= player.name %>
   <%=
-     case roll_data.action
+     case roll.action
      when :hold
-       "held, earning #{roll_data.turn_score} for this turn"
+       "held, earning #{roll.turn.score} for this turn"
      when :bust
        "went bust, no points for this turn"
      when :roll
        "rolled again"
      else
-       "-Unknown action #{roll_data.action}-"
+       "-Unknown action #{roll.action}-"
      end
  -%>
 </p>

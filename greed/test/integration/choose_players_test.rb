@@ -1,7 +1,7 @@
 require File.expand_path(File.join(File.dirname(__FILE__), "test_helper"))
 
 class ChoosePlayersTest < ActionController::IntegrationTest
-  context 'When choosing players for a game' do
+  pending_context 'When choosing players for a game' do
     setup do
       @human = HumanPlayer.new(:name => "John")
       @game = Game.create!(:human_player => @human)

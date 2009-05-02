@@ -1,4 +1,5 @@
 class Turn < ActiveRecord::Base
-  belongs_to :game
   has_many :rolls
+  belongs_to :player
+  acts_as_list :scope => :player
 end

@@ -3,5 +3,5 @@ Feature: Computer players
   
   Scenario: will see computers turn first
     Given I start a game
-    Then I should see "Randy's Turn"
+    Then I should see "Connie's Turn"
     And I should see "Your Turn"
