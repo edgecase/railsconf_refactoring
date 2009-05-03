@@ -1,7 +1,7 @@
-Feature: Create a game
+Feature: Play a game
   As a user, 
-  I would like to create a game,
-  So that I can play greed against the computer
+  I would like to play a game of Greed agains the computer
+  So that I can have fun.
 
   Scenario: Default page 
     Given I go to the homepage
