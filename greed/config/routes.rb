@@ -44,6 +44,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => "games", :action => "new"
 
+  map.connect 'simulate/clear', :controller => "simulate_rolls", :action => "clear"
+  map.connect 'simulate/:faces', :controller => "simulate_rolls", :action => "simulate"
+
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.

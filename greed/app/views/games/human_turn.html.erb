@@ -13,7 +13,7 @@
     <div class="turn">
       <h1>Your Turn</h1>
       <%= render :partial => "rolls",
-            :locals => { :player => @game.human_player, :roll_data => @roll_data } -%>
+            :locals => { :player => @game.human_player, :roll => @roll } -%>
 
     </div>
   </div>

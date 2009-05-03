@@ -58,7 +58,7 @@ class GamesController < ApplicationController
     @roll = []
     roller = Roller.new
     roller.roll(5)
-    @roll_data = RollData.new(roller.faces, 0, roller.points, roller.unused, :unknown)
+    @game.human_player.turns 
   end
 
   private

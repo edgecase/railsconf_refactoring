@@ -20,7 +20,7 @@ class Roller
   end
   
   private
-  
+
   def random_faces(n)
     (1..n).map { rand(6) + 1 }
   end
