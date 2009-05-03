@@ -53,6 +53,7 @@ class ComputerPlayer < Player
       :faces => roller.faces.map { |n| Face.new(:value => n) },
       :score => roller.points,
       :unused => roller.unused,
+      :accumulated_score => turn_score,
       :action => action)
     history << roll
   end

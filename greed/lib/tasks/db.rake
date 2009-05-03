@@ -4,5 +4,6 @@ namespace "greed" do
     rm "db/test.sqlite3"
   end
 
+  desc "Rebuild the dev and test databases from scratch"
   task :rebuild => ["greed:kill_db", "db:migrate", "db:test:clone_structure"]
 end

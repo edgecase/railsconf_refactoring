@@ -4,7 +4,7 @@ class RollTest < ActiveSupport::TestCase
   context 'A Roll' do
     setup do
       @turn = Turn.new
-      @roll = Roll.new(:turn => @turn)
+      @roll = Roll.new(:turn => @turn, :accumulated_score => 300)
     end
 
     context 'with several faces' do
@@ -24,6 +24,10 @@ class RollTest < ActiveSupport::TestCase
 
       should 'know its face values' do
         assert_equal [2, 3, 5, 5], @roll.face_values
+      end
+
+      should 'know its accumulated score' do
+        assert_equal 300, @roll.accumulated_score
       end
 
       should 'know its points' do

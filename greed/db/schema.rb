@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(:version => 20090501194952) do
   end
 
   create_table "rolls", :force => true do |t|
-    t.integer  "score"
-    t.integer  "unused"
+    t.integer  "score",             :default => 0, :null => false
+    t.integer  "accumulated_score", :default => 0, :null => false
+    t.integer  "unused",            :default => 0, :null => false
     t.string   "action_name"
     t.integer  "turn_id"
     t.integer  "position"
