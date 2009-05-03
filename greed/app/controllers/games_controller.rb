@@ -57,15 +57,8 @@ class GamesController < ApplicationController
   def human_start_turn
     setup_page_data
     @game.human_player.roller = roller
-    puts "DBG: BEFORE START TURN @game.human_player.turns.size=#{@game.human_player.turns.size.inspect}"
     @game.human_player.start_turn
-    puts "DBG: AFTER START TURN @game.human_player.turns.size=#{@game.human_player.turns.size.inspect}"
-    puts "DBG: @game.human_player.last_turn=#{@game.human_player.last_turn.inspect}"
-    puts "DBG: BEFORE ROLL @game.human_player.last_turn.rolls.size=#{@game.human_player.last_turn.rolls.size.inspect}"
     @game.human_player.roll_dice
-    puts "DBG: AFTER ROLL @game.human_player.last_turn.rolls.size=#{@game.human_player.last_turn.rolls.size.inspect}"
-    puts "DBG: @game.human_player.last_turn.rolls=#{@game.human_player.last_turn.rolls.inspect}"
-    puts "DBG: @game.human_player.last_turn=#{@game.human_player.last_turn.inspect}"
     @game.human_player.save!
     redirect_to human_turn_game_path(@game)
   end
