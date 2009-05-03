@@ -44,3 +44,8 @@ When /^I choose to hold$/ do
   click_link "Hold"
 end
 
+Then /^(\w+)'s game score is (\d+)$/ do |player, score| # '
+  doc = Nokogiri::HTML(response.body)
+  n = doc.css("div#sidebar")
+  assert_match(/#{player}\s+#{score}/, n.text)
+end

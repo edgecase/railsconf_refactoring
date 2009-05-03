@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(:version => 20090501194952) do
 
   create_table "turns", :force => true do |t|
     t.integer  "player_id"
-    t.integer  "score"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"

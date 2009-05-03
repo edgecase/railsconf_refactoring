@@ -25,7 +25,7 @@ class ComputerPlayer < Player
       again(history, roller, turn_score)
       roller.roll(roller.unused)
     end
-    turns << Turn.new(:score => turn_score, :rolls => history)
+    turns << Turn.new(:rolls => history)
     save
     last_turn
   end

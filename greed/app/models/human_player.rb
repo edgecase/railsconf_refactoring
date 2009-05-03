@@ -20,4 +20,8 @@ class HumanPlayer < Player
       :accumulated_score => accumulated_score)
     last_turn.rolls << roll
   end
+
+  def holds
+    self.score += last_turn.score
+  end
 end

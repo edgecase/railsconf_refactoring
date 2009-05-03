@@ -37,3 +37,4 @@ Feature: Create a game
     And I start a game
     And I take a turn
     When I choose to hold
+    Then John's game score is 150

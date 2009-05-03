@@ -14,13 +14,17 @@ class TurnTest < ActiveSupport::TestCase
 
     context 'with several rolls' do
       setup do
-        @r1 = Roll.new
-        @r2 = Roll.new
+        @r1 = Roll.new(:accumulated_score => 100)
+        @r2 = Roll.new(:accumulated_score => 250)
         @turn.rolls = [@r1, @r2]
       end
 
       should 'know its rolls' do
         assert_equal [@r1, @r2], @turn.rolls
+      end
+
+      should 'have the accumulated score of the last roll' do
+        assert_equal 250, @turn.score
       end
     end
   end
