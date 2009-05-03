@@ -39,6 +39,9 @@ ActionController::Routing::Routes.draw do |map|
       :assign_players => :post,
       :computer_turn => :get,
       :computer_turn_results => :get,
+      :human_start_turn => :get,
+      :human_rolls => :get,
+      :human_holds => :get,
       :human_turn => :get,
     })
 

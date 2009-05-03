@@ -2,6 +2,15 @@ Then /^I am asked to choose players$/ do
   response.should contain("Select Your Opponents")
 end
 
+Given /^the dice will roll ([1-6,]+)$/ do |faces|
+  f = faces.split(",").map { |n| n.to_i }.join("-")
+  visit "/simulate/#{f}"
+end
+
+Given /^I take a turn$/ do
+  click_link("Start Your Turn")
+end
+
 Given /^I start a game$/ do 
   $roller = nil
   visit path_to("the homepage")
@@ -26,3 +35,12 @@ Then /^the total score for Connie is unchanged$/ do
   n = doc.css("span.score")
   assert_equal @saved_total_points, n.first.text
 end
+
+Then /^the turn score so far is (\d+)$/ do |score|
+  assert_contain "so far: #{score}"
+end
+
+When /^I choose to hold$/ do
+  click_link "Hold"
+end
+

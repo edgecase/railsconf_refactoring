@@ -10,13 +10,15 @@
 <p class="action">
   <%= player.name %>
   <%=
-     case roll.action.to_sym
+     case roll.action
      when :hold
        "held, earning #{roll.turn.score} for this turn"
      when :bust
        "went bust, no points for this turn"
      when :roll
        "rolled again"
+     when nil
+       ""
      else
        "-Unknown action #{roll.action}-"
      end

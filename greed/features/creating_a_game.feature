@@ -23,3 +23,17 @@ Feature: Create a game
     Then I should see "Randy"
     And I should see "Connie"
     And I should see "John"
+
+  Scenario: A Human Player Rolls Once
+    Given the dice will roll 2,3,4,6,3
+    And the dice will roll 1,2,5,4,3
+    And I start a game
+    When I take a turn
+    Then the turn score so far is 150
+
+  Scenario: A Human Player Rolls Once
+    Given the dice will roll 2,3,4,6,3
+    And the dice will roll 1,2,5,4,3
+    And I start a game
+    And I take a turn
+    When I choose to hold

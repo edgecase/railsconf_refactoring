@@ -41,6 +41,7 @@ class GamesController < ApplicationController
   def computer_turn
     setup_page_data
     @game.computer_players.each do |cp|
+      cp.roller = roller
       turn = cp.take_turn
       cp.score += turn.score
       cp.save
@@ -53,12 +54,28 @@ class GamesController < ApplicationController
     @turn_histories = @game.computer_players.map { |p| p.last_turn }
   end
 
+  def human_start_turn
+    setup_page_data
+    @game.human_player.roller = roller
+    @game.human_player.start_turn
+    @game.human_player.roll_dice
+    @game.human_player.save!
+    redirect_to human_turn_game_path(@game)
+  end
+
+  def human_holds
+    setup_page_data
+    redirect_to human_turn_game_path(@game)
+  end
+
+  def human_rolls
+    setup_page_data
+    redirect_to human_turn_game_path(@game)
+  end
+
   def human_turn
     setup_page_data
-    @roll = []
-    roller = Roller.new
-    roller.roll(5)
-    @game.human_player.turns 
+    @roll = @game.human_player.last_turn.rolls.last
   end
 
   private
@@ -68,4 +85,18 @@ class GamesController < ApplicationController
     @players = @game.players
   end
 
+  def roller
+    @roller ||= create_roller
+  end
+
+  def create_roller
+    simulated_source = SimulatedData.new(sim_data)
+    random_source = RandomSource.new
+    source = PriorityDataSource.new(simulated_source, random_source)
+    Roller.new(source)
+  end
+
+  def sim_data
+    session[:simulation] ||= []
+  end
 end
