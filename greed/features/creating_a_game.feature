@@ -38,3 +38,4 @@ Feature: Create a game
     And I take a turn
     When I choose to hold
     Then John's game score is 150
+    And it should be Connie's turn

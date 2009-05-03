@@ -49,3 +49,7 @@ Then /^(\w+)'s game score is (\d+)$/ do |player, score| # '
   n = doc.css("div#sidebar")
   assert_match(/#{player}\s+#{score}/, n.text)
 end
+
+Then /^it should be (\w+)'s turn$/ do |player| # '
+  assert_contain "#{player}'s Turn"
+end

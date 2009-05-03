@@ -67,7 +67,7 @@ class GamesController < ApplicationController
     setup_page_data
     @game.human_player.holds
     @game.human_player.save!
-    redirect_to human_turn_game_path(@game)
+    redirect_to computer_turn_game_path(@game)
   end
 
   def human_rolls
