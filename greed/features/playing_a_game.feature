@@ -38,4 +38,30 @@ Feature: Play a game
     And I take a turn
     When I choose to hold
     Then John's game score is 150
-    And it should be Connie's turn
+    And it is Connie's turn
+
+  Scenario: A Human Player Rolls And Goes Bust
+    Given the dice will roll 2,3,4,6,3
+    And the dice will roll 4,2,3,4,3
+    And I start a game
+    And I take a turn
+    Then I go bust
+
+  Scenario: A Human Player Continues after Going Bust
+    Given the dice will roll 2,3,4,6,3
+    And the dice will roll 4,2,3,4,3
+    And I start a game
+    And I take a turn
+    When I continue    
+    Then it is Connie's turn
+
+  Scenario: A Human Player Rolls And Rerolls
+    Given the dice will roll 2,3,4,6,3
+    And the dice will roll 1,2,3,4,3
+    And I start a game
+    And I take a turn
+    When I choose to roll again
+    Then it is my turn
+    And the turn score so far is 100
+    And 4 dice are displayed
+

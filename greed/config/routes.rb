@@ -49,6 +49,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'simulate/clear', :controller => "simulate_rolls", :action => "clear"
   map.connect 'simulate/:faces', :controller => "simulate_rolls", :action => "simulate"
+  map.connect 'simulate', :controller => "simulate_rolls", :action => "index"
 
   # See how all your routes lay out with "rake routes"
 

@@ -9,7 +9,7 @@ class HumanPlayerTest < ActiveSupport::TestCase
       @player.roller = @roller
     end
 
-    context 'when starting a turn' do
+    context 'when taking a turn' do
       setup do
         @player.start_turn
       end
@@ -38,6 +38,32 @@ class HumanPlayerTest < ActiveSupport::TestCase
           end
           should 'have the turn score added to the total score' do
             assert_equal 150, @player.score
+          end
+        end
+
+        context 'and rolls again' do
+          setup do
+            @data << [1,1,1,1,1]
+            @player.rolls_again
+          end
+          should 'have 2 rolls' do
+            assert_equal 2, @player.last_turn.rolls.size
+          end
+          should 'have the first roll have the roll action' do
+            assert_equal :roll, @player.last_turn.rolls[0].action
+          end
+          should 'have the second roll with only unused dice' do
+            assert_equal 3, @player.last_turn.rolls.last.face_values.size
+          end
+
+          context 'and rolls yet again' do
+            setup do
+              @data << [1,2,3,4,5]
+              @player.rolls_again
+            end
+            should 'roll all 5 dice' do
+              assert_equal 5, @player.last_turn.rolls.last.face_values.size
+            end
           end
         end
       end

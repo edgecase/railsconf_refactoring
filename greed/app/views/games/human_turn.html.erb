@@ -18,7 +18,11 @@
     </div>
   </div>
   <p>
-    <%= link_to "Roll again", human_rolls_game_path(@game), :class => 'button' %>
-    <%= link_to "Hold", human_holds_game_path(@game), :class => 'button' %>
+    <% if @roll.accumulated_score == 0 -%>
+      <%= link_to "Continue", computer_turn_game_path(@game), :class => 'button' %>
+    <% else -%>
+      <%= link_to "Roll again", human_rolls_game_path(@game), :class => 'button' %>
+      <%= link_to "Hold", human_holds_game_path(@game), :class => 'button' %>
+    <% end -%>
   </p>
 </div>

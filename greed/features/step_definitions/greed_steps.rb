@@ -44,12 +44,40 @@ When /^I choose to hold$/ do
   click_link "Hold"
 end
 
+When /^I continue$/ do
+  click_link "Continue"
+end
+
 Then /^(\w+)'s game score is (\d+)$/ do |player, score| # '
   doc = Nokogiri::HTML(response.body)
   n = doc.css("div#sidebar")
   assert_match(/#{player}\s+#{score}/, n.text)
 end
 
-Then /^it should be (\w+)'s turn$/ do |player| # '
+Then /^it is my turn$/ do
+  assert_contain "Your Turn"
+end
+
+Then /^it is (\w+)'s turn$/ do |player| # '
   assert_contain "#{player}'s Turn"
+end
+
+Then /^(\w+) go(es)? bust$/ do |player, _|
+  player = "John" if player == "I"
+  assert_match(/#{player}\s+went bust/mi, css("p.action").text)
+end
+
+When /^I choose to roll again$/ do
+  click_link "Roll Again"
+end
+
+Then /^(\d+) dice are displayed$/ do |dice_count|
+  pending
+end
+
+# Helpers ------------------------------------------------------------
+
+def css(pattern)
+  doc = Nokogiri::HTML(response.body)
+  doc.css(pattern)
 end

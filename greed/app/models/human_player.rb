@@ -10,8 +10,8 @@ class HumanPlayer < Player
     turns << turn
   end
 
-  def roll_dice
-    roller.roll(5)
+  def roll_dice(dice_count=5)
+    roller.roll(dice_count)
     accumulated_score = roller.points
     roll = Roll.new(
       :faces => roller.faces.map { |n| Face.new(:value => n) },
@@ -23,5 +23,17 @@ class HumanPlayer < Player
 
   def holds
     self.score += last_turn.score
+  end
+
+  def rolls_again
+    last_turn.rolls.last.action = :roll
+    roll_dice(number_of_dice_to_roll)
+  end
+
+  private
+
+  def number_of_dice_to_roll
+    count = last_turn.rolls.last.unused
+    (count == 0) ? 5 : count
   end
 end
