@@ -11,7 +11,7 @@ class SimulatedRoller
     if roll
       @faces = roll[0...n]
     else
-      @faces = []
+      @faces = nil
     end
   end
 end

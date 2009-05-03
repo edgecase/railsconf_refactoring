@@ -8,9 +8,9 @@ class SimulatedRollerTest < Test::Unit::TestCase
     end
 
     context 'with no data' do
-      should 'roll empty rolls' do
+      should 'roll nil' do
         @roller.roll(4)
-        assert_equal [], @roller.faces
+        assert_nil @roller.faces
       end
     end
 
@@ -32,6 +32,17 @@ class SimulatedRollerTest < Test::Unit::TestCase
         @roller.roll(2)
         assert_equal [1,1], @roller.faces
       end
+
+      context 'when out of data' do
+        setup do
+          3.times do @roller.roll(5) end
+        end
+        should 'roll a nil' do
+          @roller.roll(5)
+          assert_nil @roller.faces
+        end
+      end
+
     end
 
   end
