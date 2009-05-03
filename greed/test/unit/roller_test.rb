@@ -1,31 +1,34 @@
 require 'test_helper'
 
 class RollerTest < Test::Unit::TestCase
-  def setup
-    @roller = Roller.new
-  end
-
-  def test_roll_rolls_n_dice
-    assert_equal 2, roll_size(2)
-    assert_equal 5, roll_size(5)
-  end
-
-  def test_randomly_distributed
-    collect_face_counts.each do |face, count|
-      assert_tween 1, 6, face, "face"
-      assert_tween 800, 1200, count, "count"
-    end
-  end
-
-  def test_calculates_score
-    def @roller.random_faces(n)
-      @faces = [1, 5, 2, 3, 2]
+  context 'A roller' do
+    setup do
+      @roller = Roller.new
     end
 
-    @roller.roll(5)
+    should 'roll n dice' do
+      assert_equal 2, roll_size(2)
+      assert_equal 5, roll_size(5)
+    end
 
-    assert_equal 150, @roller.points
-    assert_equal 3, @roller.unused
+    should 'be randomly distributed' do
+      collect_face_counts.each do |face, count|
+        assert_tween 1, 6, face, "face"
+        assert_tween 800, 1200, count, "count"
+      end
+    end
+
+    context 'with a non-random data source' do
+      setup do
+        @roller = Roller.new(SimulatedData.new([[1, 5, 2, 3, 2]]))
+      end
+
+      should 'calculate the correct scores' do
+        @roller.roll(5)
+        assert_equal 150, @roller.points
+        assert_equal 3, @roller.unused
+      end
+    end
   end
 
   private
