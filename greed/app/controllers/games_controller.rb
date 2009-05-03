@@ -50,7 +50,7 @@ class GamesController < ApplicationController
 
   def computer_turn_results
     setup_page_data
-    @turn_histories = @players.map { |p| p.last_turn }
+    @turn_histories = @game.computer_players.map { |p| p.last_turn }
   end
 
   def human_turn

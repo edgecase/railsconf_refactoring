@@ -17,8 +17,16 @@ class Roll < ActiveRecord::Base
     @unused
   end
 
-  private
+  def action
+    action_name ? action_name.to_sym : nil
+  end
+
+  def action=(act)
+    self.action_name = act.to_s
+  end
   
+  private
+
   def update_points
     scorer = Scorer.new
     scorer.score(face_values)

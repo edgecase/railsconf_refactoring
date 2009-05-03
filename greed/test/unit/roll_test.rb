@@ -40,11 +40,23 @@ class RollTest < ActiveSupport::TestCase
 
       context 'when an action is added' do
         setup do
-          @roll.action = "roll"
+          @roll.action = :roll
         end
         should 'know its action' do
-          assert_equal "roll", @roll.action
+          assert_equal :roll, @roll.action
         end
+      end
+    end
+
+    context "when saved" do
+      setup do
+        @roll.action = :hold
+        @roll.save!
+        @roll.reload
+      end
+      
+      should 'return a symbol for action' do
+        assert_equal :hold, @roll.action
       end
     end
   end

@@ -7,7 +7,7 @@ class GamesControllerTest < ActionController::TestCase
 
   # ------------------------------------------------------------------
 
-  context "Action Create" do
+  pending_context "Action Create" do
     setup do
       @player = new_player
       @game = new_game(@player)
@@ -56,7 +56,7 @@ class GamesControllerTest < ActionController::TestCase
 
   # ------------------------------------------------------------------
 
-  context 'Action choose_players' do
+  pending_context 'Action choose_players' do
     setup do
       @game = existing_game
       @game.human_player = HumanPlayer.new(:name => "Bob")
@@ -70,7 +70,7 @@ class GamesControllerTest < ActionController::TestCase
 
   # ------------------------------------------------------------------
 
-  context 'Action assign_players' do
+  pending_context 'Action assign_players' do
     setup do
       @game = existing_game
     end
@@ -112,7 +112,7 @@ class GamesControllerTest < ActionController::TestCase
 
   # ------------------------------------------------------------------  
 
-  context 'Action computer_turn' do
+  pending_context 'Action computer_turn' do
     setup do
       @c1 = ComputerPlayer.new(:score => 50)
       @c2 = ComputerPlayer.new
@@ -150,7 +150,7 @@ class GamesControllerTest < ActionController::TestCase
 
   # ------------------------------------------------------------------  
 
-  context 'Action human_turn' do
+  pending_context 'Action human_turn' do
     setup do
       @game = existing_game
       @game.human_player = HumanPlayer.new

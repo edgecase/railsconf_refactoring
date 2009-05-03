@@ -10,7 +10,7 @@
 <p class="action">
   <%= player.name %>
   <%=
-     case roll.action
+     case roll.action.to_sym
      when :hold
        "held, earning #{roll.turn.score} for this turn"
      when :bust

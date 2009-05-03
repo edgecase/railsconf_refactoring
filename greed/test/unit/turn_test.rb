@@ -3,8 +3,13 @@ require 'test_helper'
 class TurnTest < ActiveSupport::TestCase
   context 'A Turn' do
     setup do
-      @player = ComputerPlayer.new
       @turn = Turn.new
+      @player = ComputerPlayer.new(:turns => [@turn])
+      @player.save
+    end
+
+    should 'know its player' do
+      assert_equal @player, @turn.player
     end
 
     context 'with several rolls' do

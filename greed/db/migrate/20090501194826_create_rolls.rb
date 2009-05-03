@@ -3,7 +3,7 @@ class CreateRolls < ActiveRecord::Migration
     create_table :rolls do |t|
       t.integer :score
       t.integer :unused
-      t.string :action
+      t.string :action_name
       t.integer :turn_id
       t.integer :position
 
