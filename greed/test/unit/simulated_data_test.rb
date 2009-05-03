@@ -1,16 +1,15 @@
 require 'test_helper'
 
-class SimulatedRollerTest < Test::Unit::TestCase
+class SimulatedDataTest < Test::Unit::TestCase
   context 'An simulated roller' do
     setup do
       @sim_data = []
-      @roller = SimulatedRoller.new(@sim_data)
+      @data_source = SimulatedData.new(@sim_data)
     end
 
     context 'with no data' do
       should 'roll nil' do
-        @roller.roll(4)
-        assert_nil @roller.faces
+        assert_nil @data_source.random_numbers(4)
       end
     end
 
@@ -22,24 +21,21 @@ class SimulatedRollerTest < Test::Unit::TestCase
 
       should 'return the rolls in orderr' do
         result = (1..3).map { |i|
-          @roller.roll(5)
-          @roller.faces
+          @data_source.random_numbers(5)
         }
         assert_equal @expected_data, result
       end
 
       should 'honor the requested number of dice' do
-        @roller.roll(2)
-        assert_equal [1,1], @roller.faces
+        assert_equal [1,1], @data_source.random_numbers(2)
       end
 
       context 'when out of data' do
         setup do
-          3.times do @roller.roll(5) end
+          3.times do @data_source.random_numbers(5) end
         end
         should 'roll a nil' do
-          @roller.roll(5)
-          assert_nil @roller.faces
+          assert_nil @data_source.random_numbers(5)
         end
       end
 

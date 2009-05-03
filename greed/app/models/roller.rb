@@ -1,7 +1,8 @@
 class Roller
   attr_reader :faces
   
-  def initialize
+  def initialize(source=RandomSource.new)
+    @source = source
     @faces = []
     @scorer = Scorer.new
   end
@@ -22,6 +23,6 @@ class Roller
   private
 
   def random_faces(n)
-    (1..n).map { rand(6) + 1 }
+    @source.random_numbers(n)
   end
 end
