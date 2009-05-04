@@ -1,5 +1,5 @@
 Then /^I am asked to choose players$/ do
-  response.should contain("Select Your Opponents")
+  response.should contain("Select Your Opponent")
 end
 
 Given /^a fresh start$/ do
