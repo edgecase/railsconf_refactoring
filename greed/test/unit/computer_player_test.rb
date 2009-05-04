@@ -80,6 +80,21 @@ class ComputerPlayerTest < ActiveSupport::TestCase
       end
     end
     
+    context 'where the player rolls again scoring all the dice' do
+      setup do
+        flexmock(@player.roller).should_receive(:random_faces).with(5).
+          once.and_return([1,1,1,1,1])
+        flexmock(@player).should_receive(:roll_again?).once.
+          and_return(true)
+        flexmock(@player.roller).should_receive(:random_faces).with(5).
+          once.and_return([2,2,3,3,4])
+      end
+
+      should 'should roll all five dice again' do
+        turn = @player.take_turn
+      end
+    end
+
     context 'where the player rolls again' do
       setup do
         flexmock(@player.roller).should_receive(:random_faces).with(5).

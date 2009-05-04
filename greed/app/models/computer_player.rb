@@ -23,7 +23,8 @@ class ComputerPlayer < Player
         break
       end
       again(history, roller, turn_score)
-      roller.roll(roller.unused)
+      dice_count = (roller.unused == 0) ? 5 : roller.unused
+      roller.roll(dice_count)
     end
     turns << Turn.new(:rolls => history)
     save
