@@ -25,11 +25,11 @@ class HumanPlayerTest < ActiveSupport::TestCase
         end
 
         should 'have one roll on the last turn' do
-          assert_equal 1, @player.last_turn.rolls.size
+          assert_equal 1, @player.turns.last.rolls.size
         end
 
         should 'have a turn score matching the roll' do
-          assert_equal 150, @player.last_turn.score
+          assert_equal 150, @player.turns.last.score
         end
 
         context 'and holding' do
@@ -48,11 +48,11 @@ class HumanPlayerTest < ActiveSupport::TestCase
           end
 
           should 'have 2 rolls' do
-            assert_equal 2, @player.last_turn.rolls.size
+            assert_equal 2, @player.turns.last.rolls.size
           end
 
           should 'be bust' do
-            assert_equal :bust, @player.last_turn.rolls.last.action
+            assert_equal :bust, @player.turns.last.rolls.last.action
           end
         end
 
@@ -63,19 +63,19 @@ class HumanPlayerTest < ActiveSupport::TestCase
           end
 
           should 'have 2 rolls' do
-            assert_equal 2, @player.last_turn.rolls.size
+            assert_equal 2, @player.turns.last.rolls.size
           end
 
           should 'have the first roll have the roll action' do
-            assert_equal :roll, @player.last_turn.rolls[0].action
+            assert_equal :roll, @player.turns.last.rolls[0].action
           end
 
           should 'have the second roll with only unused dice' do
-            assert_equal 3, @player.last_turn.rolls.last.face_values.size
+            assert_equal 3, @player.turns.last.rolls.last.face_values.size
           end
 
           should 'have the accumulated score' do
-            assert_equal 1150, @player.last_turn.rolls.last.accumulated_score
+            assert_equal 1150, @player.turns.last.rolls.last.accumulated_score
           end
 
           context 'and rolls yet again' do
@@ -84,7 +84,7 @@ class HumanPlayerTest < ActiveSupport::TestCase
               @player.rolls_again
             end
             should 'roll all 5 dice' do
-              assert_equal 5, @player.last_turn.rolls.last.face_values.size
+              assert_equal 5, @player.turns.last.rolls.last.face_values.size
             end
           end
         end

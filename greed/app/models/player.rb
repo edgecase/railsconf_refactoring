@@ -7,8 +7,4 @@ class Player < ActiveRecord::Base
   def roller
     @roller ||= Roller.new
   end
-
-  def last_turn
-    turns.last
-  end
 end

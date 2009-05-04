@@ -15,7 +15,7 @@ class PlayerTest < ActiveSupport::TestCase
       end
 
       should 'know its last turn' do
-        assert_equal @last_turn, @player.last_turn
+        assert_equal @last_turn, @player.turns.last
       end
     end
   end

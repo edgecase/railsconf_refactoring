@@ -52,7 +52,7 @@ class GamesController < ApplicationController
       @winner = @game.computer_players.first.name
       render :action => "game_over"
     else
-      @turn_histories = @game.computer_players.map { |p| p.last_turn }
+      @turn_histories = @game.computer_players.map { |p| p.turns.last }
     end
   end
 
@@ -87,7 +87,7 @@ class GamesController < ApplicationController
 
   def human_turn
     setup_page_data
-    @rolls = @game.human_player.last_turn.rolls
+    @rolls = @game.human_player.turns.last.rolls
   end
 
   private

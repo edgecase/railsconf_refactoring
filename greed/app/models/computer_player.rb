@@ -28,7 +28,7 @@ class ComputerPlayer < Player
     end
     turns << Turn.new(:rolls => history)
     save
-    last_turn
+    turns.last
   end
   
   private
