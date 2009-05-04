@@ -1,7 +1,7 @@
 <div id="sidebar">
   <h1><span>total points</span></h1>
   <ul>
-    <% @players.each do |player| -%>
+    <% @game.players.each do |player| -%>
       <%= render :partial => "player",
             :locals => { :player => player, :current => false } -%>
     <% end -%>

@@ -94,7 +94,6 @@ class GamesController < ApplicationController
 
   def setup_page_data
     @game = Game.find(params[:id])
-    @players = @game.players
   end
 
   def roller
