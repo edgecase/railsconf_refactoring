@@ -81,6 +81,10 @@ Then /^(\d+) dice are displayed$/ do |dice_count|
   assert_equal dice_count.to_i, li.size
 end
 
+Then /^(\w+) wins the game$/ do |player|
+  assert_contain "The Winner is #{player}"
+end
+
 # Helpers ------------------------------------------------------------
 
 def css(pattern)

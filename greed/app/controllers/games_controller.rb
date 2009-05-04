@@ -48,7 +48,12 @@ class GamesController < ApplicationController
 
   def computer_turn_results
     setup_page_data
-    @turn_histories = @game.computer_players.map { |p| p.last_turn }
+    if @game.computer_players.first.score >= 3000
+      @winner = @game.computer_players.first.name
+      render :action => "game_over"
+    else
+      @turn_histories = @game.computer_players.map { |p| p.last_turn }
+    end
   end
 
   def human_start_turn
@@ -64,7 +69,12 @@ class GamesController < ApplicationController
     setup_page_data
     @game.human_player.holds
     @game.human_player.save!
-    redirect_to computer_turn_game_path(@game)
+    if @game.human_player.score >= 3000
+      @winner = @game.human_player.name
+      render :action => "game_over"
+    else
+      redirect_to computer_turn_game_path(@game)
+    end
   end
 
   def human_rolls

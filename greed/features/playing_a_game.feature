@@ -70,3 +70,30 @@ Feature: Play a game
     And 4 dice are displayed
     And the turn score so far is 200
 
+  Scenario: The Computer Player Wins
+    Given a fresh start
+    And the dice will roll 1,1,1,2,2
+    And the dice will roll 2,2,3,3,4
+    And the dice will roll 1,1,1,2,2
+    And the dice will roll 2,2,3,3,4
+    And the dice will roll 1,1,1,2,2
+    And I start a game
+    And I take a turn
+    And I continue
+    And I take a turn
+    And I continue
+    Then Connie wins the game
+
+  Scenario: The Human Player Wins
+    Given a fresh start
+    And the dice will roll 2,2,3,3,4
+    And the dice will roll 1,1,1,5,5
+    And the dice will roll 1,1,1,5,5
+    And the dice will roll 1,1,1,5,5
+    And I start a game
+    And I take a turn
+    And I choose to roll again
+    And I choose to roll again
+    And I choose to hold
+    Then John wins the game
+
