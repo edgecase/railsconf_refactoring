@@ -17,11 +17,9 @@ Feature: Play a game
     Given I go to the homepage
     When I fill in "game_name" with "John"
     And I press "Next"
-    And I check "Randy"
-    And I check "Connie"
+    And I choose "Randy"
     And I press "Play"
     Then I should see "Randy"
-    And I should see "Connie"
     And I should see "John"
 
   Scenario: A Human Player Rolls Once
