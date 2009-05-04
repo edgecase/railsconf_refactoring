@@ -2,6 +2,10 @@ Then /^I am asked to choose players$/ do
   response.should contain("Select Your Opponents")
 end
 
+Given /^a fresh start$/ do
+  visit "/simulate/clear"
+end
+
 Given /^the dice will roll ([1-6,]+)$/ do |faces|
   f = faces.split(",").map { |n| n.to_i }.join("-")
   visit "/simulate/#{f}"
@@ -72,7 +76,9 @@ When /^I choose to roll again$/ do
 end
 
 Then /^(\d+) dice are displayed$/ do |dice_count|
-  pending
+  ul = css("ul.dice")
+  li = ul.last.css("li.die")
+  assert_equal dice_count.to_i, li.size
 end
 
 # Helpers ------------------------------------------------------------

@@ -41,19 +41,41 @@ class HumanPlayerTest < ActiveSupport::TestCase
           end
         end
 
-        context 'and rolls again' do
+        context 'and rolls again going bust' do
+          setup do
+            @data << [2,2,3,3,4]
+            @player.rolls_again
+          end
+
+          should 'have 2 rolls' do
+            assert_equal 2, @player.last_turn.rolls.size
+          end
+
+          should 'be bust' do
+            assert_equal :bust, @player.last_turn.rolls.last.action
+          end
+        end
+
+        context 'and rolls again scoring points' do
           setup do
             @data << [1,1,1,1,1]
             @player.rolls_again
           end
+
           should 'have 2 rolls' do
             assert_equal 2, @player.last_turn.rolls.size
           end
+
           should 'have the first roll have the roll action' do
             assert_equal :roll, @player.last_turn.rolls[0].action
           end
+
           should 'have the second roll with only unused dice' do
             assert_equal 3, @player.last_turn.rolls.last.face_values.size
+          end
+
+          should 'have the accumulated score' do
+            assert_equal 1150, @player.last_turn.rolls.last.accumulated_score
           end
 
           context 'and rolls yet again' do

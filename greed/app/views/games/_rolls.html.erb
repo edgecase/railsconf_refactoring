@@ -1,7 +1,7 @@
 <ul class="dice">
   <li class="point_earned"><%= roll.points %> points</li>
   <% roll.face_values.each do |face| -%>
-    <li><%= image_tag "die#{face}.gif" %></li>
+    <li class="die"><%= image_tag "die#{face}.gif" %></li>
   <% end -%>
 </ul>
 

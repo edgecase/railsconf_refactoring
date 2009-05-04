@@ -25,14 +25,16 @@ Feature: Play a game
     And I should see "John"
 
   Scenario: A Human Player Rolls Once
-    Given the dice will roll 2,3,4,6,3
+    Given a fresh start
+    And the dice will roll 2,3,4,6,3
     And the dice will roll 1,2,5,4,3
     And I start a game
     When I take a turn
     Then the turn score so far is 150
 
   Scenario: A Human Player Rolls Once
-    Given the dice will roll 2,3,4,6,3
+    Given a fresh start
+    And the dice will roll 2,3,4,6,3
     And the dice will roll 1,2,5,4,3
     And I start a game
     And I take a turn
@@ -41,14 +43,16 @@ Feature: Play a game
     And it is Connie's turn
 
   Scenario: A Human Player Rolls And Goes Bust
-    Given the dice will roll 2,3,4,6,3
+    Given a fresh start
+    And the dice will roll 2,3,4,6,3
     And the dice will roll 4,2,3,4,3
     And I start a game
     And I take a turn
     Then I go bust
 
   Scenario: A Human Player Continues after Going Bust
-    Given the dice will roll 2,3,4,6,3
+    Given a fresh start
+    And the dice will roll 2,3,4,6,3
     And the dice will roll 4,2,3,4,3
     And I start a game
     And I take a turn
@@ -56,12 +60,15 @@ Feature: Play a game
     Then it is Connie's turn
 
   Scenario: A Human Player Rolls And Rerolls
-    Given the dice will roll 2,3,4,6,3
+    Given a fresh start
+    And the dice will roll 2,3,4,6,3
     And the dice will roll 1,2,3,4,3
+    And the dice will roll 5,5,3,4
+    And the dice will roll 5,5,3,4
     And I start a game
     And I take a turn
     When I choose to roll again
     Then it is my turn
-    And the turn score so far is 100
     And 4 dice are displayed
+    And the turn score so far is 200
 

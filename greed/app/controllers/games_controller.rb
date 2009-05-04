@@ -22,17 +22,14 @@ class GamesController < ApplicationController
 
   def assign_players
     @game = Game.find(params[:id])
-    strategy_names = params[:players] || []
-    if strategy_names.empty?
+    strategy_name = params[:player] || []
+    if strategy_name.blank?
       flash[:error] = "Please select at least one computer player"
       redirect_to choose_players_game_path(@game)
     else
       @game.computer_players.clear
-      strategy_names.each do |strategy|
-        p = ComputerPlayer.new(:strategy => strategy)
-        @game.computer_players << p
-      end
-      
+      p = ComputerPlayer.new(:strategy => strategy_name)
+      @game.computer_players << p
       @game.save
       redirect_to computer_turn_game_path(@game)
     end
@@ -72,6 +69,7 @@ class GamesController < ApplicationController
 
   def human_rolls
     setup_page_data
+    @game.human_player.roller = roller
     @game.human_player.rolls_again
     @game.human_player.save!
     redirect_to human_turn_game_path(@game)
@@ -79,7 +77,7 @@ class GamesController < ApplicationController
 
   def human_turn
     setup_page_data
-    @roll = @game.human_player.last_turn.rolls.last
+    @rolls = @game.human_player.last_turn.rolls
   end
 
   private

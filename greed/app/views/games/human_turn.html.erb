@@ -12,13 +12,14 @@
   <div id="rolls">
     <div class="turn">
       <h1>Your Turn</h1>
-      <%= render :partial => "rolls",
-            :locals => { :player => @game.human_player, :roll => @roll } -%>
-
+      <% @rolls.each do |roll| -%>
+        <%= render :partial => "rolls",
+              :locals => { :player => @game.human_player, :roll => roll } -%>
+      <% end -%>
     </div>
   </div>
   <p>
-    <% if @roll.accumulated_score == 0 -%>
+    <% if @rolls.last.action == :bust -%>
       <%= link_to "Continue", computer_turn_game_path(@game), :class => 'button' %>
     <% else -%>
       <%= link_to "Roll again", human_rolls_game_path(@game), :class => 'button' %>

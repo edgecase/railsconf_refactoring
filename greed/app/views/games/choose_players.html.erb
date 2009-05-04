@@ -7,7 +7,7 @@
     <% @players.each do |player| -%>
       <div class="field">
         <label>
-          <%= check_box_tag "players[]", player.to_s, false, :id => player.name %>
+          <%= radio_button_tag "player", player.to_s, false, :id => player.name %>
           <%= player.name %>
         </label>
       </div>

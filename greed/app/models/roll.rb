@@ -23,8 +23,9 @@ class Roll < ActiveRecord::Base
 
   def action=(act)
     self.action_name = act.to_s
+    save!
   end
-  
+
   private
 
   def update_points

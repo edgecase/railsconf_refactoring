@@ -13,12 +13,16 @@ class HumanPlayer < Player
   def roll_dice(dice_count=5)
     roller.roll(dice_count)
     accumulated_score = roller.points
+    accumulated_score += last_turn.rolls.last.accumulated_score unless last_turn.rolls.empty?
     roll = Roll.new(
       :faces => roller.faces.map { |n| Face.new(:value => n) },
       :score => roller.points,
       :unused => roller.unused,
       :accumulated_score => accumulated_score)
     last_turn.rolls << roll
+    if roller.points == 0
+      last_turn.rolls.last.action = :bust
+    end
   end
 
   def holds
