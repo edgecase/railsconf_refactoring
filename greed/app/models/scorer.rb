@@ -12,23 +12,15 @@ class Scorer
   private
   
   def face_score(roll, face)
-    count = face_count(roll, face)
+    count = roll.select { |n| n == face }.size
     if count >= 3
-      score_triples(face)
+      if face == 1
+        @points += 1000
+      else
+        @points += 100 * face
+      end
       count -= 3
     end
-    score_singles(face, count)
-  end
-  
-  def score_triples(face)
-    if face == 1
-      @points += 1000
-    else
-      @points += 100 * face
-    end
-  end
-  
-  def score_singles(face, count)
     if face == 5
       @points += 50 * count
     elsif face == 1
@@ -36,9 +28,5 @@ class Scorer
     else
       @unused += count
     end
-  end
-  
-  def face_count(roll, face)
-    roll.select { |n| n == face }.size
   end
 end
