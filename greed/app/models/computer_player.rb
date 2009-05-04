@@ -14,15 +14,33 @@ class ComputerPlayer < Player
     loop do
       if roller.points == 0
         turn_score = 0
-        bust(history, roller, turn_score)
+        roll = Roll.new(
+          :faces => roller.faces.map { |n| Face.new(:value => n) },
+          :score => roller.points,
+          :unused => roller.unused,
+          :accumulated_score => turn_score,
+          :action => :bust)
+        history << roll
         break
       end
       turn_score += roller.points
       if ! roll_again?
-        hold(history, roller, turn_score)
+        roll = Roll.new(
+          :faces => roller.faces.map { |n| Face.new(:value => n) },
+          :score => roller.points,
+          :unused => roller.unused,
+          :accumulated_score => turn_score,
+          :action => :hold)
+        history << roll
         break
       end
-      again(history, roller, turn_score)
+      roll = Roll.new(
+        :faces => roller.faces.map { |n| Face.new(:value => n) },
+        :score => roller.points,
+        :unused => roller.unused,
+        :accumulated_score => turn_score,
+        :action => :roll)
+      history << roll
       dice_count = (roller.unused == 0) ? 5 : roller.unused
       roller.roll(dice_count)
     end
@@ -32,28 +50,6 @@ class ComputerPlayer < Player
   end
   
   private
-
-  def again(history, roller, turn_score)
-    record(history, roller, turn_score, :roll)
-  end
-
-  def hold(history, roller, turn_score)
-    record(history, roller, turn_score, :hold)
-  end
-
-  def bust(history, roller, turn_score)
-    record(history, roller, turn_score, :bust)
-  end
-
-  def record(history, roller, turn_score, action)
-    roll = Roll.new(
-      :faces => roller.faces.map { |n| Face.new(:value => n) },
-      :score => roller.points,
-      :unused => roller.unused,
-      :accumulated_score => turn_score,
-      :action => action)
-    history << roll
-  end
 
   def make_strategy
     strategy.constantize.new
