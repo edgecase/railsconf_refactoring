@@ -55,6 +55,7 @@ Feature: Play a game
     And I start a game
     And I take a turn
     When I continue    
+    And I drink a glass of water
     Then it is Connie's turn
 
   Scenario: A Human Player Rolls And Rerolls

@@ -28,8 +28,7 @@ class GamesController < ApplicationController
       redirect_to choose_players_game_path(@game)
     else
       @game.computer_players.clear
-      p = ComputerPlayer.new(:strategy => strategy_name)
-      @game.computer_players << p
+      @game.computer_players << ComputerPlayer.new(:strategy => strategy_name)
       @game.save
       redirect_to computer_turn_game_path(@game)
     end
