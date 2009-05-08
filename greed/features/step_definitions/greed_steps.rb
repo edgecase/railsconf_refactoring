@@ -85,11 +85,6 @@ Then /^(\w+) wins the game$/ do |player|
   assert_contain "The Winner is #{player}"
 end
 
-When /^I drink a (.)$/ do |drink|
-  puts "I am drinking #{drink}"
-end
-
-
 # Helpers ------------------------------------------------------------
 
 def css(pattern)
